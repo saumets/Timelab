@@ -1,4 +1,4 @@
 TimeStack
 =========
 
-TimeStack. OS X Time Tracking tool which integrates w/ company time management API.
+TimeStack. An OSX NSStatusItem (Status Bar) Time Tracking tool which integrates w/ a company time management API.
