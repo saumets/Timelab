@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B01967571668040900D990CC /* TSStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B01967561668040900D990CC /* TSStatusItemView.m */; };
+		B0E3AA3A165BF7FF004199D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3AA39165BF7FF004199D9 /* Cocoa.framework */; };
+		B0E3AA44165BF7FF004199D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA42165BF7FF004199D9 /* InfoPlist.strings */; };
+		B0E3AA46165BF7FF004199D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA45165BF7FF004199D9 /* main.m */; };
+		B0E3AA4A165BF7FF004199D9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA48165BF7FF004199D9 /* Credits.rtf */; };
+		B0E3AA4D165BF7FF004199D9 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */; };
+		B0E3AA50165BF7FF004199D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA4E165BF7FF004199D9 /* MainMenu.xib */; };
+		B0E3AA5B165BF7FF004199D9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3AA5A165BF7FF004199D9 /* SenTestingKit.framework */; };
+		B0E3AA5C165BF7FF004199D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3AA39165BF7FF004199D9 /* Cocoa.framework */; };
+		B0E3AA64165BF7FF004199D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA62165BF7FF004199D9 /* InfoPlist.strings */; };
+		B0E3AA67165BF7FF004199D9 /* TimeStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */; };
+		B0E3AA7C165C25D5004199D9 /* designlab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA7B165C25D5004199D9 /* designlab_icon.png */; };
+		B0EC811B1666816D00B1547D /* TimeEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC811A1666816D00B1547D /* TimeEntry.xib */; };
+		B0EC811F16668ADB00B1547D /* TSTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC811E16668ADB00B1547D /* TSTimeEntry.m */; };
+		B0EC81211666911600B1547D /* designlab_logo_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EC81201666911600B1547D /* designlab_logo_RGB.png */; };
+		B0F3B01016601235000588D2 /* TSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B00F16601235000588D2 /* TSMainController.m */; };
+		B0F3B015166018CF000588D2 /* TSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B014166018CF000588D2 /* TSClient.m */; };
+		B0F3B018166018E1000588D2 /* TSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B017166018E1000588D2 /* TSProject.m */; };
+		B0F6955B165D2B9900E2704B /* TSPrefWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */; };
+		B0F6955D165D2BBB00E2704B /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6955C165D2BBB00E2704B /* Preferences.xib */; };
+		DB03C503199BFC6B005781B4 /* TSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DB03C502199BFC6B005781B4 /* TSTask.m */; };
+		DB15D74819A62FCB00B3788F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73619A62FCB00B3788F /* AFHTTPRequestOperation.m */; };
+		DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73819A62FCB00B3788F /* AFHTTPRequestOperationManager.m */; };
+		DB15D74A19A62FCB00B3788F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73A19A62FCB00B3788F /* AFHTTPSessionManager.m */; };
+		DB15D74B19A62FCB00B3788F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73D19A62FCB00B3788F /* AFNetworkReachabilityManager.m */; };
+		DB15D74C19A62FCB00B3788F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73F19A62FCB00B3788F /* AFSecurityPolicy.m */; };
+		DB15D74D19A62FCB00B3788F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D74119A62FCB00B3788F /* AFURLConnectionOperation.m */; };
+		DB15D74E19A62FCB00B3788F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D74319A62FCB00B3788F /* AFURLRequestSerialization.m */; };
+		DB15D74F19A62FCB00B3788F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D74519A62FCB00B3788F /* AFURLResponseSerialization.m */; };
+		DB15D75019A62FCB00B3788F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D74719A62FCB00B3788F /* AFURLSessionManager.m */; };
+		DB15D75219A635BC00B3788F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15D75119A635BC00B3788F /* Security.framework */; };
+		DB1D319D19A4F1D80095C59A /* timestackDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */; };
+		DB3F039B19A53CD4009E9022 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */; };
+		DBD5611F19B77CA600CD7234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD5611E19B77CA600CD7234 /* Images.xcassets */; };
+		DBEDA37B17E7CAD900D313C6 /* TSTimeEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0E3AA5D165BF7FF004199D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0E3AA2C165BF7FF004199D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E3AA34165BF7FF004199D9;
+			remoteInfo = "Lab Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B01967551668040900D990CC /* TSStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSStatusItemView.h; sourceTree = "<group>"; };
+		B01967561668040900D990CC /* TSStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSStatusItemView.m; sourceTree = "<group>"; };
+		B0E3AA35165BF7FF004199D9 /* TimeStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3AA39165BF7FF004199D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B0E3AA3C165BF7FF004199D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B0E3AA3D165BF7FF004199D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0E3AA3E165BF7FF004199D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0E3AA41165BF7FF004199D9 /* TimeStack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeStack-Info.plist"; sourceTree = "<group>"; };
+		B0E3AA43165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0E3AA45165BF7FF004199D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0E3AA47165BF7FF004199D9 /* TimeStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeStack-Prefix.pch"; sourceTree = "<group>"; };
+		B0E3AA49165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
+		B0E3AA4F165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStackTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3AA5A165BF7FF004199D9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B0E3AA61165BF7FF004199D9 /* TimeStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeStackTests-Info.plist"; sourceTree = "<group>"; };
+		B0E3AA63165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeStackTests.h; sourceTree = "<group>"; };
+		B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeStackTests.m; sourceTree = "<group>"; };
+		B0E3AA7B165C25D5004199D9 /* designlab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = designlab_icon.png; sourceTree = "<group>"; };
+		B0EC811A1666816D00B1547D /* TimeEntry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeEntry.xib; sourceTree = "<group>"; };
+		B0EC811D16668ADB00B1547D /* TSTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeEntry.h; sourceTree = "<group>"; };
+		B0EC811E16668ADB00B1547D /* TSTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeEntry.m; sourceTree = "<group>"; };
+		B0EC81201666911600B1547D /* designlab_logo_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = designlab_logo_RGB.png; sourceTree = "<group>"; };
+		B0F3B00E16601235000588D2 /* TSMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainController.h; sourceTree = "<group>"; };
+		B0F3B00F16601235000588D2 /* TSMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainController.m; sourceTree = "<group>"; };
+		B0F3B013166018CF000588D2 /* TSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSClient.h; sourceTree = "<group>"; };
+		B0F3B014166018CF000588D2 /* TSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSClient.m; sourceTree = "<group>"; };
+		B0F3B016166018E1000588D2 /* TSProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProject.h; sourceTree = "<group>"; };
+		B0F3B017166018E1000588D2 /* TSProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProject.m; sourceTree = "<group>"; };
+		B0F69559165D2B9900E2704B /* TSPrefWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPrefWindowController.h; sourceTree = "<group>"; };
+		B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPrefWindowController.m; sourceTree = "<group>"; };
+		B0F6955C165D2BBB00E2704B /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		DB03C501199BFC6B005781B4 /* TSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTask.h; sourceTree = "<group>"; };
+		DB03C502199BFC6B005781B4 /* TSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTask.m; sourceTree = "<group>"; };
+		DB15D73519A62FCB00B3788F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DB15D73619A62FCB00B3788F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DB15D73719A62FCB00B3788F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		DB15D73819A62FCB00B3788F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		DB15D73919A62FCB00B3788F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DB15D73A19A62FCB00B3788F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DB15D73B19A62FCB00B3788F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DB15D73C19A62FCB00B3788F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DB15D73D19A62FCB00B3788F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DB15D73E19A62FCB00B3788F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DB15D73F19A62FCB00B3788F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DB15D74019A62FCB00B3788F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DB15D74119A62FCB00B3788F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DB15D74219A62FCB00B3788F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DB15D74319A62FCB00B3788F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DB15D74419A62FCB00B3788F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DB15D74519A62FCB00B3788F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DB15D74619A62FCB00B3788F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DB15D74719A62FCB00B3788F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DB15D75119A635BC00B3788F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timestackDefaults.plist; sourceTree = "<group>"; };
+		DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DBD5611E19B77CA600CD7234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeEntryController.h; sourceTree = "<group>"; };
+		DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeEntryController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0E3AA32165BF7FF004199D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB15D75219A635BC00B3788F /* Security.framework in Frameworks */,
+				DB3F039B19A53CD4009E9022 /* SystemConfiguration.framework in Frameworks */,
+				B0E3AA3A165BF7FF004199D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E3AA55165BF7FF004199D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E3AA5B165BF7FF004199D9 /* SenTestingKit.framework in Frameworks */,
+				B0E3AA5C165BF7FF004199D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0E3AA2A165BF7FF004199D9 = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA3F165BF7FF004199D9 /* TimeStack */,
+				B0E3AA5F165BF7FF004199D9 /* TimeStackTests */,
+				B0E3AA38165BF7FF004199D9 /* Frameworks */,
+				B0E3AA36165BF7FF004199D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0E3AA36165BF7FF004199D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA35165BF7FF004199D9 /* TimeStack.app */,
+				B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E3AA38165BF7FF004199D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB15D75119A635BC00B3788F /* Security.framework */,
+				DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */,
+				B0E3AA39165BF7FF004199D9 /* Cocoa.framework */,
+				B0E3AA5A165BF7FF004199D9 /* SenTestingKit.framework */,
+				B0E3AA3B165BF7FF004199D9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0E3AA3B165BF7FF004199D9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA3C165BF7FF004199D9 /* AppKit.framework */,
+				B0E3AA3D165BF7FF004199D9 /* CoreData.framework */,
+				B0E3AA3E165BF7FF004199D9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B0E3AA3F165BF7FF004199D9 /* TimeStack */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3AFEA165FED88000588D2 /* AFNetworking */,
+				B0F69557165D2ABB00E2704B /* Preferences */,
+				B0E3AA78165C246C004199D9 /* TimeStack */,
+				B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */,
+				B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */,
+				B01967551668040900D990CC /* TSStatusItemView.h */,
+				B01967561668040900D990CC /* TSStatusItemView.m */,
+				B0E3AA4E165BF7FF004199D9 /* MainMenu.xib */,
+				B0E3AA40165BF7FF004199D9 /* Supporting Files */,
+				B0E3AA7A165C258B004199D9 /* Resources */,
+				DBD5611E19B77CA600CD7234 /* Images.xcassets */,
+			);
+			path = TimeStack;
+			sourceTree = "<group>";
+		};
+		B0E3AA40165BF7FF004199D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA41165BF7FF004199D9 /* TimeStack-Info.plist */,
+				B0E3AA42165BF7FF004199D9 /* InfoPlist.strings */,
+				B0E3AA45165BF7FF004199D9 /* main.m */,
+				B0E3AA47165BF7FF004199D9 /* TimeStack-Prefix.pch */,
+				B0E3AA48165BF7FF004199D9 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0E3AA5F165BF7FF004199D9 /* TimeStackTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */,
+				B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */,
+				B0E3AA60165BF7FF004199D9 /* Supporting Files */,
+			);
+			path = TimeStackTests;
+			sourceTree = "<group>";
+		};
+		B0E3AA60165BF7FF004199D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E3AA61165BF7FF004199D9 /* TimeStackTests-Info.plist */,
+				B0E3AA62165BF7FF004199D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0E3AA78165C246C004199D9 /* TimeStack */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC811A1666816D00B1547D /* TimeEntry.xib */,
+				B0F3B0121660188D000588D2 /* Models */,
+				B0F3B01116601264000588D2 /* Controllers */,
+			);
+			name = TimeStack;
+			sourceTree = "<group>";
+		};
+		B0E3AA7A165C258B004199D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC81201666911600B1547D /* designlab_logo_RGB.png */,
+				B0E3AA7B165C25D5004199D9 /* designlab_icon.png */,
+				DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B0F3AFEA165FED88000588D2 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DB15D73519A62FCB00B3788F /* AFHTTPRequestOperation.h */,
+				DB15D73619A62FCB00B3788F /* AFHTTPRequestOperation.m */,
+				DB15D73719A62FCB00B3788F /* AFHTTPRequestOperationManager.h */,
+				DB15D73819A62FCB00B3788F /* AFHTTPRequestOperationManager.m */,
+				DB15D73919A62FCB00B3788F /* AFHTTPSessionManager.h */,
+				DB15D73A19A62FCB00B3788F /* AFHTTPSessionManager.m */,
+				DB15D73B19A62FCB00B3788F /* AFNetworking.h */,
+				DB15D73C19A62FCB00B3788F /* AFNetworkReachabilityManager.h */,
+				DB15D73D19A62FCB00B3788F /* AFNetworkReachabilityManager.m */,
+				DB15D73E19A62FCB00B3788F /* AFSecurityPolicy.h */,
+				DB15D73F19A62FCB00B3788F /* AFSecurityPolicy.m */,
+				DB15D74019A62FCB00B3788F /* AFURLConnectionOperation.h */,
+				DB15D74119A62FCB00B3788F /* AFURLConnectionOperation.m */,
+				DB15D74219A62FCB00B3788F /* AFURLRequestSerialization.h */,
+				DB15D74319A62FCB00B3788F /* AFURLRequestSerialization.m */,
+				DB15D74419A62FCB00B3788F /* AFURLResponseSerialization.h */,
+				DB15D74519A62FCB00B3788F /* AFURLResponseSerialization.m */,
+				DB15D74619A62FCB00B3788F /* AFURLSessionManager.h */,
+				DB15D74719A62FCB00B3788F /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B0F3B01116601264000588D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3B00E16601235000588D2 /* TSMainController.h */,
+				B0F3B00F16601235000588D2 /* TSMainController.m */,
+				DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */,
+				DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B0F3B0121660188D000588D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3B013166018CF000588D2 /* TSClient.h */,
+				B0F3B014166018CF000588D2 /* TSClient.m */,
+				B0F3B016166018E1000588D2 /* TSProject.h */,
+				B0F3B017166018E1000588D2 /* TSProject.m */,
+				B0EC811D16668ADB00B1547D /* TSTimeEntry.h */,
+				B0EC811E16668ADB00B1547D /* TSTimeEntry.m */,
+				DB03C501199BFC6B005781B4 /* TSTask.h */,
+				DB03C502199BFC6B005781B4 /* TSTask.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B0F69557165D2ABB00E2704B /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6955C165D2BBB00E2704B /* Preferences.xib */,
+				B0F69558165D2AC200E2704B /* Controllers */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		B0F69558165D2AC200E2704B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F69559165D2B9900E2704B /* TSPrefWindowController.h */,
+				B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0E3AA34165BF7FF004199D9 /* TimeStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStack" */;
+			buildPhases = (
+				B0E3AA31165BF7FF004199D9 /* Sources */,
+				B0E3AA32165BF7FF004199D9 /* Frameworks */,
+				B0E3AA33165BF7FF004199D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeStack;
+			productName = "Lab Control";
+			productReference = B0E3AA35165BF7FF004199D9 /* TimeStack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0E3AA58165BF7FF004199D9 /* TimeStackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStackTests" */;
+			buildPhases = (
+				B0E3AA54165BF7FF004199D9 /* Sources */,
+				B0E3AA55165BF7FF004199D9 /* Frameworks */,
+				B0E3AA56165BF7FF004199D9 /* Resources */,
+				B0E3AA57165BF7FF004199D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0E3AA5E165BF7FF004199D9 /* PBXTargetDependency */,
+			);
+			name = TimeStackTests;
+			productName = "Lab ControlTests";
+			productReference = B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0E3AA2C165BF7FF004199D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Design Lab Inc.";
+			};
+			buildConfigurationList = B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "TimeStack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0E3AA2A165BF7FF004199D9;
+			productRefGroup = B0E3AA36165BF7FF004199D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0E3AA34165BF7FF004199D9 /* TimeStack */,
+				B0E3AA58165BF7FF004199D9 /* TimeStackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0E3AA33165BF7FF004199D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E3AA44165BF7FF004199D9 /* InfoPlist.strings in Resources */,
+				B0E3AA4A165BF7FF004199D9 /* Credits.rtf in Resources */,
+				B0E3AA50165BF7FF004199D9 /* MainMenu.xib in Resources */,
+				B0E3AA7C165C25D5004199D9 /* designlab_icon.png in Resources */,
+				DBD5611F19B77CA600CD7234 /* Images.xcassets in Resources */,
+				B0F6955D165D2BBB00E2704B /* Preferences.xib in Resources */,
+				B0EC811B1666816D00B1547D /* TimeEntry.xib in Resources */,
+				B0EC81211666911600B1547D /* designlab_logo_RGB.png in Resources */,
+				DB1D319D19A4F1D80095C59A /* timestackDefaults.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E3AA56165BF7FF004199D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E3AA64165BF7FF004199D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0E3AA57165BF7FF004199D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0E3AA31165BF7FF004199D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB15D74819A62FCB00B3788F /* AFHTTPRequestOperation.m in Sources */,
+				B0E3AA46165BF7FF004199D9 /* main.m in Sources */,
+				B0E3AA4D165BF7FF004199D9 /* TSAppDelegate.m in Sources */,
+				B0F6955B165D2B9900E2704B /* TSPrefWindowController.m in Sources */,
+				DB03C503199BFC6B005781B4 /* TSTask.m in Sources */,
+				DB15D75019A62FCB00B3788F /* AFURLSessionManager.m in Sources */,
+				DB15D74A19A62FCB00B3788F /* AFHTTPSessionManager.m in Sources */,
+				DB15D74B19A62FCB00B3788F /* AFNetworkReachabilityManager.m in Sources */,
+				B0F3B01016601235000588D2 /* TSMainController.m in Sources */,
+				DB15D74F19A62FCB00B3788F /* AFURLResponseSerialization.m in Sources */,
+				DB15D74E19A62FCB00B3788F /* AFURLRequestSerialization.m in Sources */,
+				DB15D74D19A62FCB00B3788F /* AFURLConnectionOperation.m in Sources */,
+				DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */,
+				B0F3B015166018CF000588D2 /* TSClient.m in Sources */,
+				B0F3B018166018E1000588D2 /* TSProject.m in Sources */,
+				DB15D74C19A62FCB00B3788F /* AFSecurityPolicy.m in Sources */,
+				B0EC811F16668ADB00B1547D /* TSTimeEntry.m in Sources */,
+				B01967571668040900D990CC /* TSStatusItemView.m in Sources */,
+				DBEDA37B17E7CAD900D313C6 /* TSTimeEntryController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E3AA54165BF7FF004199D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E3AA67165BF7FF004199D9 /* TimeStackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0E3AA5E165BF7FF004199D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0E3AA34165BF7FF004199D9 /* TimeStack */;
+			targetProxy = B0E3AA5D165BF7FF004199D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0E3AA42165BF7FF004199D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E3AA43165BF7FF004199D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0E3AA48165BF7FF004199D9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E3AA49165BF7FF004199D9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B0E3AA4E165BF7FF004199D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E3AA4F165BF7FF004199D9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B0E3AA62165BF7FF004199D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E3AA63165BF7FF004199D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0E3AA68165BF7FF004199D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0E3AA69165BF7FF004199D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0E3AA6B165BF7FF004199D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
+				INFOPLIST_FILE = "TimeStack/TimeStack-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = TimeStack;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0E3AA6C165BF7FF004199D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
+				INFOPLIST_FILE = "TimeStack/TimeStack-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = TimeStack;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B0E3AA6E165BF7FF004199D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TimeStack.app/Contents/MacOS/TimeStack";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
+				INFOPLIST_FILE = "TimeStackTests/TimeStackTests-Info.plist";
+				PRODUCT_NAME = TimeStackTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B0E3AA6F165BF7FF004199D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TimeStack.app/Contents/MacOS/TimeStack";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
+				INFOPLIST_FILE = "TimeStackTests/TimeStackTests-Info.plist";
+				PRODUCT_NAME = TimeStackTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "TimeStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E3AA68165BF7FF004199D9 /* Debug */,
+				B0E3AA69165BF7FF004199D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E3AA6B165BF7FF004199D9 /* Debug */,
+				B0E3AA6C165BF7FF004199D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E3AA6E165BF7FF004199D9 /* Debug */,
+				B0E3AA6F165BF7FF004199D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0E3AA2C165BF7FF004199D9 /* Project object */;
+}

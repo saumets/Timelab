@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>timestack-baseurl</key>
+	<string></string>
+	<key>timestack-apikey</key>
+	<string></string>
+	<key>timestack-authuser</key>
+	<string></string>
+	<key>timestack-authpass</key>
+	<string></string>
+</dict>
+</plist>
