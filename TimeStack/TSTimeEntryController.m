@@ -41,14 +41,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 
 @synthesize delegate;
 @synthesize clientsWithTimeEntries, activeTimeEntry;
-@synthesize timeEntryPanel, projectOutlet, taskOutlet, timeEntryCreateOutlet, timeEntryRemoveOutlet, timerToggleOutlet, timeDisplayOutlet, billableOutlet, notesOutlet, timeEntryControlOutlet, submitTimeEntryOutlet;
-
-@synthesize dateSelectPopOver;
-
-- (IBAction)showSelectDatePopOver:(id)sender {
-    NSLog(@"Testing Popup");
-    [[self dateSelectPopOver] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
-}
+@synthesize timeEntryPanel, projectOutlet, taskOutlet, timeEntryCreateOutlet, timeEntryRemoveOutlet, timerToggleOutlet,timeDisplayOutlet, dateDisplayOutlet, billableOutlet, notesOutlet, timeEntryControlOutlet, submitTimeEntryOutlet;
 
 - (id)init {
     self = [super initWithWindowNibName:@"TimeEntry"];
@@ -116,7 +109,6 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 - (BOOL) removeTimeEntry:(TSTimeEntry *)timeEntry {
     
     TSClient *client = [self findClientWithTimeEntry:timeEntry];
-    //NSInteger entryIndex = [[client timeEntries] indexOfObject:timeEntry];
     
     // straight basic removal from array.
     
@@ -243,7 +235,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     for(int i = 0; i < timeEntries; i++) {
         NSUInteger segmentLabel = (NSUInteger)i+1;
         [timeEntryControlOutlet setLabel:[NSString stringWithFormat:@"%li",  segmentLabel] forSegment:i];
-        [timeEntryControlOutlet setWidth:37 forSegment:i];
+        [timeEntryControlOutlet setWidth:36 forSegment:i];
     }
     
     [[timeEntryControlOutlet selectedCell] setRepresentedObject:[client timeEntries]];
@@ -282,6 +274,8 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         [timeEntryCreateOutlet setEnabled:TRUE];
     }
     
+    
+    
     NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:[timeEntry totalTime]];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm:ss"];
@@ -290,14 +284,19 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     if ([timeEntry active]) {
         [timerToggleOutlet setTitle:@"Pause"];
         activeTimeEntry = timeEntry;
-        [timeDisplayOutlet setStringValue:[timeEntry updateTimeEntry:self]];
+        // [timeDisplayOutlet setStringValue:[timeEntry updateTimeEntry:self]];
+        [[timeDisplayOutlet cell] setPlaceholderString:[timeEntry updateTimeEntry:self]];
     } else {
         [timerToggleOutlet setTitle:@"Start"];
         activeTimeEntry = nil;
-        [timeDisplayOutlet setStringValue:[dateFormatter stringFromDate:timerDate]];
+        // [timeDisplayOutlet setStringValue:[dateFormatter stringFromDate:timerDate]];
+        [[timeDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:timerDate]];
     }
     
-    
+    [dateFormatter setDateFormat:@"MM/dd/YY"];
+    [dateDisplayOutlet setAlignment:NSRightTextAlignment];
+    [[dateDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:[timeEntry workDate]]];
+    // [dateDisplayOutlet setStringValue:[dateFormatter stringFromDate:[timeEntry workDate]]];
     
     // START/PAUSE TIME BUTTON TOGGLE
     [[timerToggleOutlet cell] setRepresentedObject:timeEntry];
@@ -419,7 +418,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
             [self removeTimeEntry:showingEntry];
             
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            //
+
         }];
 }
 
@@ -441,7 +440,8 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 
 - (void) updateActiveTimeEntry:(id)sender {
     if (activeTimeEntry != nil) {
-      [timeDisplayOutlet setStringValue:[activeTimeEntry updateTimeEntry:self]];
+      //[timeDisplayOutlet setStringValue:[activeTimeEntry updateTimeEntry:self]];
+        [[timeDisplayOutlet cell] setPlaceholderString:[activeTimeEntry updateTimeEntry:self]];
     }
 }
 

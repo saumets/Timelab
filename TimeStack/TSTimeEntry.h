@@ -47,11 +47,10 @@
     NSMenuItem *selectedProject;
     NSMenuItem *selectedTask;
     
-    
-    
     NSNumber * projectId;
     NSNumber * taskId;
     BOOL billable;
+    NSDate * workDate;
     NSString * workDescription;
     
 }
@@ -67,6 +66,7 @@
 @property (nonatomic, strong) NSNumber * projectId;
 @property (nonatomic, strong) NSNumber * taskId;
 @property (nonatomic, assign) BOOL billable;
+@property (nonatomic, strong) NSDate *workDate;
 @property (nonatomic, strong) NSString * workDescription;
 
 -(id) initWithClient:(TSClient *) clientObject;

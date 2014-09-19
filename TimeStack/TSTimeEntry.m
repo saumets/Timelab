@@ -38,8 +38,8 @@
 
 @synthesize client;
 @synthesize selectedProject, selectedTask;
-@synthesize projectId,taskId, billable;
-@synthesize workDescription;
+@synthesize projectId, taskId, billable;
+@synthesize workDate, workDescription;
 
 -(id)initWithClient:(TSClient *)clientObject {
     self = [super init];
@@ -47,6 +47,7 @@
         // Initialization code here.
         
         [self setClient:clientObject];
+        workDate = [NSDate date];
         workDescription = [[NSString alloc] init];
     }
     

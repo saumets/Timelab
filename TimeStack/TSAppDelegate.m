@@ -73,7 +73,6 @@
 
 - (void) applicationWillTerminate:(NSNotification *)notification {
     NSLog(@"Application is terminating.");
-    //[timelabMainController clientsArray]
 }
 
 - (void) dealloc {

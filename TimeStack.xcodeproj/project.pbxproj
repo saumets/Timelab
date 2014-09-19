@@ -40,6 +40,15 @@
 		DB15D75219A635BC00B3788F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15D75119A635BC00B3788F /* Security.framework */; };
 		DB1D319D19A4F1D80095C59A /* timestackDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */; };
 		DB3F039B19A53CD4009E9022 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */; };
+		DB9ABDAD19CB2BC10052D55B /* TSDatePickerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */; };
+		DB9ABDB019CB32CA0052D55B /* TSDateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */; };
+		DB9ABE1C19CB602A0052D55B /* TSIconTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */; };
+		DBA67B3B19CC92DD0001F41D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B3719CC92DD0001F41D /* calendar.png */; };
+		DBA67B4119CC939A0001F41D /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B3F19CC939A0001F41D /* calendar@2x.png */; };
+		DBA67B4519CC94CD0001F41D /* TSTimeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */; };
+		DBA67B4819CC98C80001F41D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B4619CC98C80001F41D /* clock.png */; };
+		DBA67B4919CC98C80001F41D /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B4719CC98C80001F41D /* clock@2x.png */; };
+		DBD3DEFE19CCADFD00D448D9 /* TSTimeOverridePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */; };
 		DBD5611F19B77CA600CD7234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD5611E19B77CA600CD7234 /* Images.xcassets */; };
 		DBEDA37B17E7CAD900D313C6 /* TSTimeEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */; };
 /* End PBXBuildFile section */
@@ -114,6 +123,20 @@
 		DB15D75119A635BC00B3788F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timestackDefaults.plist; sourceTree = "<group>"; };
 		DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DB9ABDAB19CB2BC10052D55B /* TSDatePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDatePickerPopoverController.h; sourceTree = "<group>"; };
+		DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDatePickerPopoverController.m; sourceTree = "<group>"; };
+		DB9ABDAE19CB32CA0052D55B /* TSDateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDateTextField.h; sourceTree = "<group>"; };
+		DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDateTextField.m; sourceTree = "<group>"; };
+		DB9ABE1A19CB602A0052D55B /* TSIconTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSIconTextFieldCell.h; sourceTree = "<group>"; };
+		DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSIconTextFieldCell.m; sourceTree = "<group>"; };
+		DBA67B3719CC92DD0001F41D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		DBA67B3F19CC939A0001F41D /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		DBA67B4319CC94CD0001F41D /* TSTimeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeTextField.h; sourceTree = "<group>"; };
+		DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeTextField.m; sourceTree = "<group>"; };
+		DBA67B4619CC98C80001F41D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		DBA67B4719CC98C80001F41D /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		DBD3DEFC19CCADFD00D448D9 /* TSTimeOverridePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeOverridePopoverController.h; sourceTree = "<group>"; };
+		DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeOverridePopoverController.m; sourceTree = "<group>"; };
 		DBD5611E19B77CA600CD7234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeEntryController.h; sourceTree = "<group>"; };
 		DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeEntryController.m; sourceTree = "<group>"; };
@@ -245,6 +268,10 @@
 		B0E3AA7A165C258B004199D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DBA67B4619CC98C80001F41D /* clock.png */,
+				DBA67B4719CC98C80001F41D /* clock@2x.png */,
+				DBA67B3F19CC939A0001F41D /* calendar@2x.png */,
+				DBA67B3719CC92DD0001F41D /* calendar.png */,
 				B0EC81201666911600B1547D /* designlab_logo_RGB.png */,
 				B0E3AA7B165C25D5004199D9 /* designlab_icon.png */,
 				DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */,
@@ -285,6 +312,10 @@
 				B0F3B00F16601235000588D2 /* TSMainController.m */,
 				DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */,
 				DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */,
+				DB9ABDAB19CB2BC10052D55B /* TSDatePickerPopoverController.h */,
+				DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */,
+				DBD3DEFC19CCADFD00D448D9 /* TSTimeOverridePopoverController.h */,
+				DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +331,12 @@
 				B0EC811E16668ADB00B1547D /* TSTimeEntry.m */,
 				DB03C501199BFC6B005781B4 /* TSTask.h */,
 				DB03C502199BFC6B005781B4 /* TSTask.m */,
+				DB9ABDAE19CB32CA0052D55B /* TSDateTextField.h */,
+				DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */,
+				DB9ABE1A19CB602A0052D55B /* TSIconTextFieldCell.h */,
+				DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */,
+				DBA67B4319CC94CD0001F41D /* TSTimeTextField.h */,
+				DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -395,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA67B4819CC98C80001F41D /* clock.png in Resources */,
+				DBA67B4919CC98C80001F41D /* clock@2x.png in Resources */,
 				B0E3AA44165BF7FF004199D9 /* InfoPlist.strings in Resources */,
 				B0E3AA4A165BF7FF004199D9 /* Credits.rtf in Resources */,
 				B0E3AA50165BF7FF004199D9 /* MainMenu.xib in Resources */,
@@ -402,7 +441,9 @@
 				DBD5611F19B77CA600CD7234 /* Images.xcassets in Resources */,
 				B0F6955D165D2BBB00E2704B /* Preferences.xib in Resources */,
 				B0EC811B1666816D00B1547D /* TimeEntry.xib in Resources */,
+				DBA67B3B19CC92DD0001F41D /* calendar.png in Resources */,
 				B0EC81211666911600B1547D /* designlab_logo_RGB.png in Resources */,
+				DBA67B4119CC939A0001F41D /* calendar@2x.png in Resources */,
 				DB1D319D19A4F1D80095C59A /* timestackDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9ABDAD19CB2BC10052D55B /* TSDatePickerPopoverController.m in Sources */,
 				DB15D74819A62FCB00B3788F /* AFHTTPRequestOperation.m in Sources */,
 				B0E3AA46165BF7FF004199D9 /* main.m in Sources */,
 				B0E3AA4D165BF7FF004199D9 /* TSAppDelegate.m in Sources */,
@@ -447,11 +489,15 @@
 				DB15D74A19A62FCB00B3788F /* AFHTTPSessionManager.m in Sources */,
 				DB15D74B19A62FCB00B3788F /* AFNetworkReachabilityManager.m in Sources */,
 				B0F3B01016601235000588D2 /* TSMainController.m in Sources */,
+				DBA67B4519CC94CD0001F41D /* TSTimeTextField.m in Sources */,
+				DBD3DEFE19CCADFD00D448D9 /* TSTimeOverridePopoverController.m in Sources */,
 				DB15D74F19A62FCB00B3788F /* AFURLResponseSerialization.m in Sources */,
 				DB15D74E19A62FCB00B3788F /* AFURLRequestSerialization.m in Sources */,
+				DB9ABE1C19CB602A0052D55B /* TSIconTextFieldCell.m in Sources */,
 				DB15D74D19A62FCB00B3788F /* AFURLConnectionOperation.m in Sources */,
 				DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */,
 				B0F3B015166018CF000588D2 /* TSClient.m in Sources */,
+				DB9ABDB019CB32CA0052D55B /* TSDateTextField.m in Sources */,
 				B0F3B018166018E1000588D2 /* TSProject.m in Sources */,
 				DB15D74C19A62FCB00B3788F /* AFSecurityPolicy.m in Sources */,
 				B0EC811F16668ADB00B1547D /* TSTimeEntry.m in Sources */,

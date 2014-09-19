@@ -27,12 +27,15 @@
  *
 **/
 
+#import "TSDateTextField.h"
+
 @class TSClient;
 @class TSTimeEntry;
+@class TSDatePickerPopoverController;
 
 @protocol TSTimeEntryControllerDelegate;
 
-@interface TSTimeEntryController : NSWindowController <NSWindowDelegate> {
+@interface TSTimeEntryController : NSWindowController <NSWindowDelegate, NSPopoverDelegate> {
 
 @private
     
@@ -58,15 +61,16 @@
     __weak NSButton *timeEntryRemoveOutlet;
     __weak NSButton *timerToggleOutlet;
     __weak NSTextField *timeDisplayOutlet;
+    __weak TSDateTextField *dateDisplayOutlet;
     __weak NSButton *billableOutlet;
     __weak NSTextField *notesOutlet;
     __weak NSSegmentedControl *timeEntryControlOutlet;
     __weak NSButton *submitTimeEntryOutlet;
-    
-    __weak NSPopover *dateSelectPopOver;
+
 }
 
 @property (weak, nonatomic) id <TSTimeEntryControllerDelegate> delegate;
+
 @property (nonatomic, strong) NSMutableSet *clientsWithTimeEntries;
 @property (nonatomic, strong) TSTimeEntry *activeTimeEntry;
 
@@ -77,15 +81,11 @@
 @property (nonatomic, weak) IBOutlet NSButton *timeEntryRemoveOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *timerToggleOutlet;
 @property (nonatomic, weak) IBOutlet NSTextField *timeDisplayOutlet;
+@property (nonatomic, weak) IBOutlet TSDateTextField *dateDisplayOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *billableOutlet;
 @property (nonatomic, weak) IBOutlet NSTextField *notesOutlet;
 @property (nonatomic, weak) IBOutlet NSSegmentedControl *timeEntryControlOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *submitTimeEntryOutlet;
-
-@property (nonatomic,weak) IBOutlet NSPopover *dateSelectPopOver;
-
-- (IBAction)showSelectDatePopOver:(id)sender;
-
 
 - (BOOL) loadTimeEntry:(TSTimeEntry *)timeEntry;
 - (void) loadClientTimeEntries:(TSClient *)client;
