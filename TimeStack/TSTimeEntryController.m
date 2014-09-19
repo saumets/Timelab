@@ -43,6 +43,13 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 @synthesize clientsWithTimeEntries, activeTimeEntry;
 @synthesize timeEntryPanel, projectOutlet, taskOutlet, timeEntryCreateOutlet, timeEntryRemoveOutlet, timerToggleOutlet, timeDisplayOutlet, billableOutlet, notesOutlet, timeEntryControlOutlet, submitTimeEntryOutlet;
 
+@synthesize dateSelectPopOver;
+
+- (IBAction)showSelectDatePopOver:(id)sender {
+    NSLog(@"Testing Popup");
+    [[self dateSelectPopOver] showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+}
+
 - (id)init {
     self = [super initWithWindowNibName:@"TimeEntry"];
     if (self) {
@@ -50,7 +57,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         
         // allocate any data we need
         clientsWithTimeEntries = [[NSMutableSet alloc] init];
-        
+
         // load our window
         [self window];
 

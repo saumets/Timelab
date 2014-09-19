@@ -8,7 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="TSTimeEntryController">
             <connections>
                 <outlet property="billableOutlet" destination="95" id="cpx-3K-nS9"/>
-                <outlet property="newTimeEntryOutlet" destination="iP7-W8-Ig0" id="Cxs-ci-Iac"/>
+                <outlet property="dateSelectPopOver" destination="Skg-L7-uB4" id="Out-gf-NoI"/>
                 <outlet property="notesOutlet" destination="20" id="enC-ot-wKM"/>
                 <outlet property="projectOutlet" destination="jaT-dK-Y6P" id="PXQ-lm-8Dm"/>
                 <outlet property="submitTimeEntryOutlet" destination="107" id="Qfd-ov-r1L"/>
@@ -137,9 +137,9 @@ Gw
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" id="fkx-OQ-FJM">
-                        <rect key="frame" x="264" y="145" width="196" height="32"/>
+                        <rect key="frame" x="260" y="145" width="102" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Start Timer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5bP-cQ-YB8">
+                        <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5bP-cQ-YB8">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -148,7 +148,7 @@ Gw
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" id="Jme-dj-BfJ">
-                        <rect key="frame" x="270" y="183" width="184" height="22"/>
+                        <rect key="frame" x="364" y="151" width="90" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="00:00:00" drawsBackground="YES" id="ZEd-RZ-p8t">
                             <font key="font" metaFont="system"/>
@@ -166,7 +166,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" id="iP7-W8-Ig0">
-                        <rect key="frame" x="263" y="210" width="103" height="32"/>
+                        <rect key="frame" x="260" y="210" width="102" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="New Entry" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4DP-Lb-ViS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -177,7 +177,7 @@ Gw
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" id="tQi-aD-Kyb">
-                        <rect key="frame" x="365" y="210" width="95" height="32"/>
+                        <rect key="frame" x="358" y="210" width="102" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TNT-v9-ZKB">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -187,12 +187,56 @@ Gw
                             <action selector="clickedTimeEntryRemoveOutlet:" target="-2" id="cRH-S6-i2W"/>
                         </connections>
                     </button>
+                    <textField verticalHuggingPriority="750" id="pJZ-hA-kPz" customClass="TSDateTextField">
+                        <rect key="frame" x="266" y="182" width="188" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="enr-qB-kVr">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
         </window>
-        <drawer trailingOffset="15" id="Hpq-YW-ly8">
-            <size key="contentSize" width="100" height="100"/>
-            <size key="maxContentSize" width="10000" height="10000"/>
-        </drawer>
+        <viewController id="Q6N-5V-g30" userLabel="Popover View Controller" customClass="TSDatePickerPopoverController">
+            <connections>
+                <outlet property="datePicker" destination="ZDF-rh-3iO" id="He1-fm-RCT"/>
+                <outlet property="popover" destination="Skg-L7-uB4" id="0tB-GJ-ol6"/>
+                <outlet property="view" destination="JfS-Wr-eHe" id="g3H-zo-trW"/>
+            </connections>
+        </viewController>
+        <popover id="Skg-L7-uB4">
+            <connections>
+                <outlet property="contentViewController" destination="Q6N-5V-g30" id="2Al-An-ABU"/>
+            </connections>
+        </popover>
+        <customView id="JfS-Wr-eHe">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <datePicker verticalHuggingPriority="750" id="ZDF-rh-3iO">
+                    <rect key="frame" x="0.0" y="0.0" width="139" height="148"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <datePickerCell key="cell" alignment="left" datePickerStyle="clockAndCalendar" id="mKd-NW-5et">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="-595324800">
+                            <!--1982-02-19 16:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                    </datePickerCell>
+                </datePicker>
+            </subviews>
+        </customView>
+        <searchField verticalHuggingPriority="750" id="heg-m2-5kE">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="NHT-iX-eVz">
+                <font key="font" metaFont="system"/>
+                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </searchFieldCell>
+        </searchField>
     </objects>
 </document>

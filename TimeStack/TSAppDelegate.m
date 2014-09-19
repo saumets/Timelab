@@ -52,7 +52,7 @@
     // setup custom view that implements mouseDown: and rightMouseDown:
     self.statusItemView = [[TSStatusItemView alloc] init];
     self.statusItemView.image = [NSImage imageNamed:@"designlab_icon.png"];
-    self.statusItemView.alternateImage = [NSImage imageNamed:@"clock_icon.png"];
+    //self.statusItemView.alternateImage = [NSImage imageNamed:@"clock_icon.png"];
     self.statusItemView.target = self;
     self.statusItemView.action = @selector(mainAction);
     self.statusItemView.rightAction = @selector(rightMenu);

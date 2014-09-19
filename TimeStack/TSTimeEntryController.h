@@ -62,7 +62,8 @@
     __weak NSTextField *notesOutlet;
     __weak NSSegmentedControl *timeEntryControlOutlet;
     __weak NSButton *submitTimeEntryOutlet;
- 
+    
+    __weak NSPopover *dateSelectPopOver;
 }
 
 @property (weak, nonatomic) id <TSTimeEntryControllerDelegate> delegate;
@@ -80,6 +81,11 @@
 @property (nonatomic, weak) IBOutlet NSTextField *notesOutlet;
 @property (nonatomic, weak) IBOutlet NSSegmentedControl *timeEntryControlOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *submitTimeEntryOutlet;
+
+@property (nonatomic,weak) IBOutlet NSPopover *dateSelectPopOver;
+
+- (IBAction)showSelectDatePopOver:(id)sender;
+
 
 - (BOOL) loadTimeEntry:(TSTimeEntry *)timeEntry;
 - (void) loadClientTimeEntries:(TSClient *)client;
