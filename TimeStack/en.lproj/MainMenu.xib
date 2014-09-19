@@ -7,7 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
             <connections>
-                <outlet property="delegate" destination="494" id="495"/>
+                <outlet property="delegate" destination="494" id="0qE-Zk-Oy8"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -15,7 +15,7 @@
         <customObject id="420" customClass="NSFontManager"/>
         <customObject id="494" userLabel="TSAppDelegate" customClass="TSAppDelegate">
             <connections>
-                <outlet property="aboutLabControl" destination="688" id="724"/>
+                <outlet property="aboutTimeStack" destination="688" id="dSb-mp-hCa"/>
                 <outlet property="statusMenu" destination="537" id="543"/>
                 <outlet property="timeMenu" destination="733" id="741"/>
             </connections>
@@ -25,7 +25,7 @@
                 <menuItem title="About TimeStack" id="686">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="openAboutLabControl:" target="494" id="725"/>
+                        <action selector="openAboutTimeStack:" target="494" id="49z-wh-IiL"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Preferences..." id="539">

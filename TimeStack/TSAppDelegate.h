@@ -36,13 +36,12 @@
 
 @interface TSAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate> {
    
-    IBOutlet NSWindow * aboutLabControl;
+    IBOutlet NSWindow * aboutTimeStack;
     
     NSStatusItem * statusItem;
 
     TSStatusItemView *statusItemView;
     
-    //TSPrefWindowController *preferencesWindowController;
     TSMainController *timelabMainController;
 
     IBOutlet NSMenu *statusMenu;
@@ -50,17 +49,13 @@
     
     
 }
-/*
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-*/
+
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (strong, nonatomic) TSStatusItemView *statusItemView;
 
 @property (strong, nonatomic) NSMenu *statusMenu;
 @property (strong, nonatomic) NSMenu *timeMenu;
 
-- (IBAction)openAboutLabControl:(id)sender;
+- (IBAction)openAboutTimeStack:(id)sender;
 
 @end
