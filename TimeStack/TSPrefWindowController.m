@@ -36,7 +36,7 @@
 
 @implementation TSPrefWindowController
 
-@synthesize delegate, timestackAPIKey, timestackBaseURL,timestackAuthUsername, timestackAuthPassword;
+@synthesize timestackAPIKey, timestackBaseURL,timestackAuthUsername, timestackAuthPassword;
 
 - (id)init {
     self = [super initWithWindowNibName:@"Preferences"];
@@ -49,7 +49,7 @@
         
         [timestackBaseURL setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-baseurl"]];
         [timestackAPIKey setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-apikey"]];
-        [timestackAuthUsername setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authname"]];
+        [timestackAuthUsername setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authuser"]];
         [timestackAuthPassword setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authpass"]];
 
     }
@@ -71,8 +71,6 @@
     [[NSUserDefaults standardUserDefaults] setObject:[timestackAuthPassword stringValue] forKey:@"timestack-authpass"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    [self.delegate testConnection:self];
 }
 
 - (void) closePreferences:(id)sender {

@@ -31,13 +31,7 @@
 
 @class AFURLSessionManager;
 
-@protocol TSPrefWindowControllerDelegate;
-
 @interface TSPrefWindowController : NSWindowController {
-
-@private
-    
-    __weak id <TSPrefWindowControllerDelegate> delegate;
 
 @public
     
@@ -50,7 +44,6 @@
     __weak IBOutlet NSTextField *timestackAuthPassword;
 }
 
-@property (weak, nonatomic) id <TSPrefWindowControllerDelegate> delegate;
 @property (weak) IBOutlet NSTextField *timestackBaseURL;
 @property (weak) IBOutlet NSTextField *timestackAPIKey;
 @property (weak) IBOutlet NSTextField *timestackAuthUsername;
@@ -58,11 +51,5 @@
 
 - (IBAction) savePreferences:(id)sender;
 - (IBAction) closePreferences:(id)sender;
-
-@end
-
-@protocol TSPrefWindowControllerDelegate <NSObject>
-
-- (void) testConnection:(id)sender;
 
 @end
