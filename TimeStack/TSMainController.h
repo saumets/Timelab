@@ -33,7 +33,7 @@
 
 @class TSClient;
 
-@interface TSMainController : NSObject <TSPrefWindowControllerDelegate, TSTimeEntryControllerDelegate> {
+@interface TSMainController : NSObject <TSTimeEntryControllerDelegate> {
 
 @private
     

@@ -69,6 +69,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         NSButton *closeButton = [[self window] standardWindowButton:NSWindowCloseButton];
         [closeButton setTarget:self];
         [closeButton setAction:@selector(closeTimeEntries:)];
+        
     }
     
     return self;

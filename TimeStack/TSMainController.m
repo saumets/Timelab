@@ -341,21 +341,12 @@
     
     if (!preferencesWindowController) {
         preferencesWindowController = [[TSPrefWindowController alloc] init];
-        [self.preferencesWindowController setDelegate:self];
+        //[self.preferencesWindowController setDelegate:self];
     }
     
     [NSApp activateIgnoringOtherApps:YES];
     [self.preferencesWindowController showWindow:self];
     [[self.preferencesWindowController window] makeKeyAndOrderFront:self];
-}
-
-#pragma mark -
-#pragma mark TSPrefWindowController Delegate Implementation
-
-- (void) testConnection:(id)sender {
-
-   // NOT USED
-    
 }
 
 #pragma mark -
