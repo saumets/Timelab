@@ -338,6 +338,11 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 - (void) saveTimeEntryState:(TSTimeEntry *)timeEntry {
     [timeEntry setSelectedProject:[projectOutlet selectedItem]];
     [timeEntry setSelectedTask:[taskOutlet selectedItem]];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM/dd/YY"];
+    [timeEntry setWorkDate:[dateFormatter dateFromString:[[dateDisplayOutlet cell] placeholderString]]];
+
     [timeEntry setWorkDescription:[notesOutlet stringValue]];
     [timeEntry setBillable:[[NSNumber numberWithInteger:[billableOutlet state]] boolValue]];
 }
