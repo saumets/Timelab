@@ -282,17 +282,24 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [dateFormatter setDateFormat:@"HH:mm:ss"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
     
-    if ([timeEntry active]) {
-        [timerToggleOutlet setTitle:@"Pause"];
-        activeTimeEntry = timeEntry;
-        // [timeDisplayOutlet setStringValue:[timeEntry updateTimeEntry:self]];
-        [[timeDisplayOutlet cell] setPlaceholderString:[timeEntry updateTimeEntry:self]];
+    // check if manual time entry exists for this entry.
+    if (isnan([timeEntry manualTime])) {
+        // manual entry does not exist - show our timer values
+        if ([timeEntry active]) {
+            [timerToggleOutlet setTitle:@"Pause"];
+            activeTimeEntry = timeEntry;
+            // [timeDisplayOutlet setStringValue:[timeEntry updateTimeEntry:self]];
+            [[timeDisplayOutlet cell] setPlaceholderString:[timeEntry updateTimeEntry:self]];
+        } else {
+            [timerToggleOutlet setTitle:@"Start"];
+            activeTimeEntry = nil;
+            // [timeDisplayOutlet setStringValue:[dateFormatter stringFromDate:timerDate]];
+            [[timeDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:timerDate]];
+        }
     } else {
-        [timerToggleOutlet setTitle:@"Start"];
-        activeTimeEntry = nil;
-        // [timeDisplayOutlet setStringValue:[dateFormatter stringFromDate:timerDate]];
-        [[timeDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:timerDate]];
+        [timeDisplayOutlet setStringValue:[NSString stringWithFormat:@"%.02lf",[timeEntry manualTime]]];
     }
+
     
     [dateFormatter setDateFormat:@"MM/dd/YY"];
     [dateDisplayOutlet setAlignment:NSRightTextAlignment];
@@ -343,6 +350,12 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [dateFormatter setDateFormat:@"MM/dd/YY"];
     [timeEntry setWorkDate:[dateFormatter dateFromString:[[dateDisplayOutlet cell] placeholderString]]];
 
+    if ([timeDisplayOutlet stringValue] && [[timeDisplayOutlet stringValue] length] > 0) {
+        [timeEntry setManualTime:[timeDisplayOutlet doubleValue]];
+    } else {
+        [timeEntry setManualTime:NAN];
+    }
+    
     [timeEntry setWorkDescription:[notesOutlet stringValue]];
     [timeEntry setBillable:[[NSNumber numberWithInteger:[billableOutlet state]] boolValue]];
 }
@@ -388,15 +401,19 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         TSProject *project = (TSProject *)[[showingEntry selectedProject] representedObject];
         TSTask *task = (TSTask *)[[showingEntry selectedTask] representedObject];
     
-        NSDate *date = [NSDate date];
+        NSDate *date = [showingEntry workDate];
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"yyyy-MM-dd"];
-
-        double hours = ([showingEntry totalTime] / 3600);
+    
+        double hours = [showingEntry manualTime];
+    
+        if (isnan(hours)) {
+           hours = ([showingEntry totalTime] / 3600);
+        }
     
         parameters[@"project_id"] = [[project projectId] stringValue];
         parameters[@"date"] = [dateFormat stringFromDate:date];
-        parameters[@"hours"] = [NSString stringWithFormat:@"%.02f", hours];
+        parameters[@"hours"] = [NSString stringWithFormat:@"%.02lf", hours];
         parameters[@"billable"] = [NSNumber numberWithBool:[showingEntry billable]];
         parameters[@"task_id"] = [[task taskId] stringValue];
         parameters[@"notes"] = [showingEntry workDescription];

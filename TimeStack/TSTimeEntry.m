@@ -40,6 +40,7 @@
 @synthesize selectedProject, selectedTask;
 @synthesize projectId, taskId, billable;
 @synthesize workDate, workDescription;
+@synthesize manualTime;
 
 -(id)initWithClient:(TSClient *)clientObject {
     self = [super init];
@@ -48,6 +49,7 @@
         
         [self setClient:clientObject];
         workDate = [NSDate date];
+        manualTime = NAN;
         workDescription = [[NSString alloc] init];
     }
     
