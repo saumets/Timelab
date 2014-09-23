@@ -67,7 +67,6 @@
     if (!timelabMainController) {
         timelabMainController= [[TSMainController alloc] initWithMenu:statusMenu withClientIndex:TIMELAB_MENUITEM_INDEX];
     }
-    
 }
 
 - (void) applicationWillTerminate:(NSNotification *)notification {
@@ -103,8 +102,8 @@
 #pragma mark IBAction Selectors
 
 - (void) openAboutTimeStack:(id)sender {
-    
-   [aboutTimeStack makeKeyAndOrderFront:self];
+    [NSApp activateIgnoringOtherApps:YES];
+    [aboutTimeStack makeKeyAndOrderFront:self];
 }
 
 @end
