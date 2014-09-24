@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeEntry.h
- * TimeStack
+ * TLTimeEntry.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,13 +27,13 @@
  *
  **/
 
-@class TSClient;
+@class TLClient;
 
-@interface TSTimeEntry : NSObject {
+@interface TLTimeEntry : NSObject {
 
 @public
     // we might not need this here since we keep TLTimeEntry objects within the Client class.
-    TSClient * client;
+    TLClient * client;
     
 @private
     
@@ -63,7 +63,7 @@
 
 @property (nonatomic, strong) NSMenuItem * selectedProject;
 @property (nonatomic, strong) NSMenuItem * selectedTask;
-@property (nonatomic, strong) TSClient * client;
+@property (nonatomic, strong) TLClient * client;
 @property (nonatomic, strong) NSNumber * projectId;
 @property (nonatomic, strong) NSNumber * taskId;
 @property (nonatomic, assign) BOOL billable;
@@ -71,7 +71,7 @@
 @property (nonatomic) double  manualTime;
 @property (nonatomic, strong) NSString * workDescription;
 
--(id) initWithClient:(TSClient *) clientObject;
+-(id) initWithClient:(TLClient *) clientObject;
 -(void) timeStart:(id) sender;
 -(void) timePause:(id) sender;
 -(void) timeReset:(id) sender;

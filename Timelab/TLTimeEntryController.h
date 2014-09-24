@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeEntryController.h
- * TimeStack
+ * TLTimeEntryController.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,26 +27,26 @@
  *
 **/
 
-#import "TSDateTextField.h"
+#import "TLDateTextField.h"
 
-@class TSClient;
-@class TSTimeEntry;
-@class TSDatePickerPopoverController;
+@class TLClient;
+@class TLTimeEntry;
+@class TLDatePickerPopoverController;
 
-@protocol TSTimeEntryControllerDelegate;
+@protocol TLTimeEntryControllerDelegate;
 
-@interface TSTimeEntryController : NSWindowController <NSWindowDelegate, NSPopoverDelegate> {
+@interface TLTimeEntryController : NSWindowController <NSWindowDelegate, NSPopoverDelegate> {
 
 @private
     
-    __weak id <TSTimeEntryControllerDelegate> delegate;
+    __weak id <TLTimeEntryControllerDelegate> delegate;
     
     // timer for updating panel pages
     NSTimer *activeTimeEntryUpdateTimer;
     // ivar reference to our current "active" timeEntry.
-    TSTimeEntry * activeTimeEntry;
+    TLTimeEntry * activeTimeEntry;
     // ivar reference to the currently showing timeEntry.
-    TSTimeEntry * showingEntry;
+    TLTimeEntry * showingEntry;
     
     // Contains NSMenuItem(s)
     NSMutableSet * clientsWithTimeEntries;
@@ -61,7 +61,7 @@
     __weak NSButton *timeEntryRemoveOutlet;
     __weak NSButton *timerToggleOutlet;
     __weak NSTextField *timeDisplayOutlet;
-    __weak TSDateTextField *dateDisplayOutlet;
+    __weak TLDateTextField *dateDisplayOutlet;
     __weak NSButton *billableOutlet;
     __weak NSTextField *notesOutlet;
     __weak NSSegmentedControl *timeEntryControlOutlet;
@@ -69,10 +69,10 @@
 
 }
 
-@property (weak, nonatomic) id <TSTimeEntryControllerDelegate> delegate;
+@property (weak, nonatomic) id <TLTimeEntryControllerDelegate> delegate;
 
 @property (nonatomic, strong) NSMutableSet *clientsWithTimeEntries;
-@property (nonatomic, strong) TSTimeEntry *activeTimeEntry;
+@property (nonatomic, strong) TLTimeEntry *activeTimeEntry;
 
 @property (nonatomic, weak) IBOutlet NSPanel *timeEntryPanel;
 @property (nonatomic, weak) IBOutlet NSPopUpButton *projectOutlet;
@@ -81,14 +81,14 @@
 @property (nonatomic, weak) IBOutlet NSButton *timeEntryRemoveOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *timerToggleOutlet;
 @property (nonatomic, weak) IBOutlet NSTextField *timeDisplayOutlet;
-@property (nonatomic, weak) IBOutlet TSDateTextField *dateDisplayOutlet;
+@property (nonatomic, weak) IBOutlet TLDateTextField *dateDisplayOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *billableOutlet;
 @property (nonatomic, weak) IBOutlet NSTextField *notesOutlet;
 @property (nonatomic, weak) IBOutlet NSSegmentedControl *timeEntryControlOutlet;
 @property (nonatomic, weak) IBOutlet NSButton *submitTimeEntryOutlet;
 
-- (BOOL) loadTimeEntry:(TSTimeEntry *)timeEntry;
-- (void) loadClientTimeEntries:(TSClient *)client;
+- (BOOL) loadTimeEntry:(TLTimeEntry *)timeEntry;
+- (void) loadClientTimeEntries:(TLClient *)client;
 
 /**
  * Quickly checks to see whether the given client has an active time entry.
@@ -99,7 +99,7 @@
  *         nil otherwise.
  */
 
-- (TSTimeEntry *) clientHasActiveTimeEntry:(TSClient *)client;
+- (TLTimeEntry *) clientHasActiveTimeEntry:(TLClient *)client;
 
 /**
  * Create a new time entry for a client.
@@ -112,7 +112,7 @@
  * @return TRUE if successfully created the time entry.
  *         FALSE otherwise.
  */
-- (BOOL) createTimeEntry:(id)sender forClient:(TSClient *)client error:(NSError * __autoreleasing *)error;
+- (BOOL) createTimeEntry:(id)sender forClient:(TLClient *)client error:(NSError * __autoreleasing *)error;
 
 /**
  * Remove a time entry from a client.
@@ -124,9 +124,9 @@
  * @return TRUE if successfully removed the time entry.
  *         FALSE otherwise.
  */
-- (BOOL) removeTimeEntry:(TSTimeEntry *)timeEntry;
+- (BOOL) removeTimeEntry:(TLTimeEntry *)timeEntry;
 
-- (TSClient *) findClientWithTimeEntry:(TSTimeEntry *)timeEntry;
+- (TLClient *) findClientWithTimeEntry:(TLTimeEntry *)timeEntry;
 
 /**
  * Save the current state into the given time entry object.
@@ -135,7 +135,7 @@
  *
  * return void
  */
-- (void) saveTimeEntryState:(TSTimeEntry *)timeEntry;
+- (void) saveTimeEntryState:(TLTimeEntry *)timeEntry;
 
 // timer pause
 
@@ -150,8 +150,8 @@
 - (IBAction) toggleTimer:(id)sender;
 @end
 
-@protocol TSTimeEntryControllerDelegate <NSObject>
+@protocol TLTimeEntryControllerDelegate <NSObject>
 
-- (void) lastTimeEntryRemovedForClient:(TSClient *)client;
+- (void) lastTimeEntryRemovedForClient:(TLClient *)client;
 
 @end

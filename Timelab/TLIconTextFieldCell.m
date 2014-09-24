@@ -1,7 +1,7 @@
 /**
  *
- * TSIconTextFieldCell.m
- * TimeStack
+ * TLIconTextFieldCell.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-#import "TSIconTextFieldCell.h"
+#import "TLIconTextFieldCell.h"
 
-@implementation TSIconTextFieldCell
+@implementation TLIconTextFieldCell
 
 - (NSRect)drawingRectForBounds:(NSRect)rect {
     

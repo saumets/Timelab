@@ -1,7 +1,7 @@
 /**
  *
- * TSIconTextFieldCell.h
- * TimeStack
+ * TLIconTextFieldCell.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,6 +27,6 @@
  *
  **/
 
-@interface TSIconTextFieldCell : NSTextFieldCell
+@interface TLIconTextFieldCell : NSTextFieldCell
 
 @end

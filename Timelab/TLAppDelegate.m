@@ -1,7 +1,7 @@
 /**
  *
- * TSAppDelegate.m
- * TimeStack
+ * TLAppDelegate.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,14 +27,14 @@
  *
  **/
 
-#import "TSAppDelegate.h"
-#import "TSPrefWindowController.h"
-#import "TSMainController.h"
-#import "TSTimeEntryController.h"
+#import "TLAppDelegate.h"
+#import "TLPrefWindowController.h"
+#import "TLMainController.h"
+#import "TLTimeEntryController.h"
 
 #define TIMELAB_MENUITEM_INDEX 3
 
-@implementation TSAppDelegate
+@implementation TLAppDelegate
 
 @synthesize statusItem;
 @synthesize statusItemView;
@@ -50,7 +50,7 @@
     [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
     
     // setup custom view that implements mouseDown: and rightMouseDown:
-    self.statusItemView = [[TSStatusItemView alloc] init];
+    self.statusItemView = [[TLStatusItemView alloc] init];
     self.statusItemView.image = [NSImage imageNamed:@"designlab_icon.png"];
     self.statusItemView.target = self;
     self.statusItemView.action = @selector(mainAction);
@@ -65,7 +65,7 @@
     [statusItem setView:self.statusItemView];
     
     if (!timelabMainController) {
-        timelabMainController= [[TSMainController alloc] initWithMenu:statusMenu withClientIndex:TIMELAB_MENUITEM_INDEX];
+        timelabMainController= [[TLMainController alloc] initWithMenu:statusMenu withClientIndex:TIMELAB_MENUITEM_INDEX];
     }
 }
 

@@ -1,7 +1,7 @@
 /**
  *
- * TSProject.m
- * TimeStack
+ * TLProject.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-#import "TSProject.h"
+#import "TLProject.h"
 
-@implementation TSProject
+@implementation TLProject
 
 @synthesize projectId, projectTitle, projectClient, projectStatus;
 

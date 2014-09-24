@@ -1,7 +1,7 @@
 /**
  *
- * TSProject.h
- * TimeStack
+ * TLProject.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,15 +27,15 @@
  *
  **/
 
-#import "TSClient.h"
+#import "TLClient.h"
 
-@interface TSProject : NSObject {
+@interface TLProject : NSObject {
 
 @private
     NSNumber *projectId;
     NSString *projectTitle;
     
-    TSClient *projectClient;
+    TLClient *projectClient;
     
     BOOL projectStatus;
     
@@ -45,7 +45,7 @@
 
 @property (nonatomic, strong) NSNumber *projectId;
 @property (nonatomic, strong) NSString *projectTitle;
-@property (nonatomic, strong) TSClient *projectClient;
+@property (nonatomic, strong) TLClient *projectClient;
 @property (nonatomic, assign) BOOL projectStatus;
 
 

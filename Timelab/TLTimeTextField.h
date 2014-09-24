@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeTextField.h
- * TimeStack
+ * TLTimeTextField.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,6 +27,6 @@
  *
  **/
 
-@interface TSTimeTextField : NSTextField
+@interface TLTimeTextField : NSTextField
 
 @end

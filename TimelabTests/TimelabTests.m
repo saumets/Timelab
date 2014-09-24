@@ -1,7 +1,7 @@
 /**
  *
- * TimeStackTests.m
- * TimeStack
+ * TimelabTests.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-#import "TimeStackTests.h"
+#import "TimelabTests.h"
 
-@implementation TimeStackTests
+@implementation TimelabTests
 
 - (void)setUp
 {

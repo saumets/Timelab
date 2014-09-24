@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeOverridePopoverController.h
- * TimeStack
+ * TLTimeOverridePopoverController.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,7 +27,7 @@
  *
  **/
 
-@interface TSTimeOverridePopoverController : NSViewController <NSPopoverDelegate> {
+@interface TLTimeOverridePopoverController : NSViewController <NSPopoverDelegate> {
 
 @public
     NSPopover *timeOverridePopOver;

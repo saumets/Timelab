@@ -1,7 +1,7 @@
 /**
  *
- * TSDatePickerPopoverController.m
- * TimeStack
+ * TLDatePickerPopoverController.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,13 +27,13 @@
  *
  **/
 
-#import "TSDatePickerPopoverController.h"
+#import "TLDatePickerPopoverController.h"
 
-@interface TSDatePickerPopoverController ()
+@interface TLDatePickerPopoverController ()
 @property (copy) void(^completionHandler)(NSDate *selectedDate);
 @end
 
-@implementation TSDatePickerPopoverController
+@implementation TLDatePickerPopoverController
 
 @synthesize datePicker;
 @synthesize dateSelectPopOver;

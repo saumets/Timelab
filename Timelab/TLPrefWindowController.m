@@ -1,7 +1,7 @@
 /**
  *
- * TSPrefWindowController.m
- * TimeStack
+ * TLPrefWindowController.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,14 +27,14 @@
  *
  **/
 
-#import "TSPrefWindowController.h"
+#import "TLPrefWindowController.h"
 #import "AFURLSessionManager.h"
 
-@interface TSPrefWindowController ()
+@interface TLPrefWindowController ()
 // private methods
 @end
 
-@implementation TSPrefWindowController
+@implementation TLPrefWindowController
 
 @synthesize timestackAPIKey, timestackBaseURL,timestackAuthUsername, timestackAuthPassword;
 

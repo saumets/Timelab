@@ -1,7 +1,7 @@
 /**
  *
- * TSStatusItemView.h
- * TimeStack
+ * TLStatusItemView.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,7 +27,7 @@
  *
  **/
 
-@interface TSStatusItemView : NSView {
+@interface TLStatusItemView : NSView {
 
     NSImage *image;
     NSImage *alternateImage;

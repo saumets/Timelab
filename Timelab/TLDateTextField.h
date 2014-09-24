@@ -1,7 +1,7 @@
 /**
  *
- * TSDateTextField.h
- * TimeStack
+ * TLDateTextField.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,6 +27,6 @@
  *
  **/
 
-@interface TSDateTextField : NSTextField <NSDatePickerCellDelegate>
+@interface TLDateTextField : NSTextField <NSDatePickerCellDelegate>
 
 @end

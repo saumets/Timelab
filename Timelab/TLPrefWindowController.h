@@ -1,7 +1,7 @@
 /**
  *
- * TSPrefWindowController.h
- * TimeStack
+ * TLPrefWindowController.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -31,7 +31,7 @@
 
 @class AFURLSessionManager;
 
-@interface TSPrefWindowController : NSWindowController {
+@interface TLPrefWindowController : NSWindowController {
 
 @public
     

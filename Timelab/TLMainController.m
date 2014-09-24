@@ -1,7 +1,7 @@
 /**
  *
- * TSMainController.m
- * TimeStack
+ * TLMainController.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -29,23 +29,23 @@
 
 #import "AFURLSessionManager.h"
 
-#import "TSMainController.h"
+#import "TLMainController.h"
 
-#import "TSClient.h"
-#import "TSProject.h"
-#import "TSTask.h"
-#import "TSTimeEntry.h"
+#import "TLClient.h"
+#import "TLProject.h"
+#import "TLTask.h"
+#import "TLTimeEntry.h"
 
 #define CLIENT_ACTIVE_START_OFFSET 5
 #define PREFERENCES_MENUITEM_INDEX 1
 
-@interface TSMainController (PrivateMethods)
+@interface TLMainController (PrivateMethods)
 - (void) rebuildClientMenuTree;
-- (void) removeFromTimeEntryMenuTree:(TSClient *)client;
+- (void) removeFromTimeEntryMenuTree:(TLClient *)client;
 - (void) rebuildTimeEntryMenuTree;
 @end
 
-@implementation TSMainController 
+@implementation TLMainController
 
 @synthesize validConnection;
 @synthesize preferencesWindowController, timeEntryController;
@@ -79,9 +79,9 @@
         [rootMenu insertItem:noTimeEntry atIndex:CLIENT_ACTIVE_START_OFFSET];
         
         // load our time entry controller and its windows for later user.
-        // Release When Closed is disabled in the NIB for the panel since we're retaining it.
+        // release when closed is disabled in the NIB for the panel since we're retaining it.
         if (!timeEntryController) {
-            timeEntryController = [[TSTimeEntryController alloc] init];
+            timeEntryController = [[TLTimeEntryController alloc] init];
             [timeEntryController setDelegate:self];
         }
         
@@ -146,15 +146,15 @@
     if ([sender isKindOfClass:[NSMenuItem class]]) {
         
         NSMenuItem *menuItem = (NSMenuItem *)sender;
-        if ([[menuItem representedObject] isKindOfClass:[TSClient class]]) {
+        if ([[menuItem representedObject] isKindOfClass:[TLClient class]]) {
             
-            TSClient *client = (TSClient *)[menuItem representedObject];
+            TLClient *client = (TLClient *)[menuItem representedObject];
             
             NSError *error = nil;
             if (![timeEntryController createTimeEntry:self forClient:client error:&error]) {
                 NSAlert *errorAlert = [NSAlert alertWithError:error];
                 // The client has more than maximum allowed time entries currently. Is one of them active?
-                TSTimeEntry *timeEntry = [timeEntryController clientHasActiveTimeEntry:client];
+                TLTimeEntry *timeEntry = [timeEntryController clientHasActiveTimeEntry:client];
                 
                 // if one is active load that one up, otherwise load up the first time entry.
                 if (timeEntry) {
@@ -196,7 +196,7 @@
         
         // does the client object not exist in our memory already? then add it.
         if (![filteredClientsArray count]) {
-            TSClient *newClient = [[TSClient alloc] initWithAttributes:client_id withName:client_name];
+            TLClient *newClient = [[TLClient alloc] initWithAttributes:client_id withName:client_name];
 
             [clientsArray addObject:newClient];
         }
@@ -208,7 +208,7 @@
     // to refresh the task models we require at least a single client in the system.
     if ([clientsArray count]) {
     
-        TSClient *client = [clientsArray objectAtIndex:0];
+        TLClient *client = [clientsArray objectAtIndex:0];
       
         [[client tasksArray] removeAllObjects];
 
@@ -225,14 +225,14 @@
             
             BOOL taskStatus = [[task valueForKeyPath:@"is_active"] boolValue];
             
-            TSTask *newTask = [[TSTask alloc] initWithAttributes:taskId withName:taskName categoryName: categoryName categoryId: categoryId andStatus:taskStatus];
+            TLTask *newTask = [[TLTask alloc] initWithAttributes:taskId withName:taskName categoryName: categoryName categoryId: categoryId andStatus:taskStatus];
             
             [[client tasksArray] addObject:newTask];
         }
         
         [[client tasksMenu] removeAllItems];
         
-        for (TSTask *task in [client tasksArray]) {
+        for (TLTask *task in [client tasksArray]) {
             NSMenuItem *taskMenuItem = [[NSMenuItem alloc] initWithTitle:[task taskName] action:nil keyEquivalent:@""];
             [taskMenuItem setRepresentedObject:task];
             
@@ -261,7 +261,7 @@
         
         BOOL projectStatus = [[project valueForKeyPath:@"active"] boolValue];
         
-        TSProject *newProject = [[TSProject alloc] initWithAttributes:projectId withTitle:projectName andStatus:projectStatus];
+        TLProject *newProject = [[TLProject alloc] initWithAttributes:projectId withTitle:projectName andStatus:projectStatus];
         
         if ([self addProjectToClient:newProject withClientId:client_id]) {
             continue;
@@ -307,7 +307,7 @@
     [clientSelectMenu removeAllItems];
     
     // refresh the new entry - clients menu
-    for (TSClient *client in clientsArray) {
+    for (TLClient *client in clientsArray) {
         NSMenuItem *newClientItem = [[NSMenuItem alloc] initWithTitle:[client clientName] action:@selector(newTimeEntry:) keyEquivalent:@""];
         // attach the TLClient object as the represented object for this NSMenuItem
         [newClientItem setTarget:self];
@@ -316,7 +316,7 @@
     }
 }
 
-- (BOOL) addProjectToClient:(TSProject *)project withClientId:(NSNumber *)clientId {
+- (BOOL) addProjectToClient:(TLProject *)project withClientId:(NSNumber *)clientId {
     
     // predicate logic filter to see if the client exists in memory already
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"companyId == %@",clientId];
@@ -324,7 +324,7 @@
     
     if ([filteredClientsArray count]) {
         // we found our client. assign it to the project model and add the project to the client project(s) array.
-        TSClient *client = (TSClient *)[filteredClientsArray objectAtIndex:0];
+        TLClient *client = (TLClient *)[filteredClientsArray objectAtIndex:0];
         [project setProjectClient:client];
         [[client projectsArray] addObject:project];
         
@@ -342,7 +342,7 @@
 - (void) openPreferences:(id)sender {
     
     if (!preferencesWindowController) {
-        preferencesWindowController = [[TSPrefWindowController alloc] init];
+        preferencesWindowController = [[TLPrefWindowController alloc] init];
     }
     
     [NSApp activateIgnoringOtherApps:YES];
@@ -353,7 +353,7 @@
 #pragma mark -
 #pragma mark TSTimeEntryController Delegate Implementation
 
-- (void) lastTimeEntryRemovedForClient:(TSClient *)client {
+- (void) lastTimeEntryRemovedForClient:(TLClient *)client {
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title == %@",[client clientName]];
     NSSet *filteredClientSet = [[timeEntryController clientsWithTimeEntries] filteredSetUsingPredicate:predicate];

@@ -1,7 +1,7 @@
 /**
  *
- * TSAppDelegate.h
- * TimeStack
+ * TLAppDelegate.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -29,20 +29,20 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "TSStatusItemView.h"
+#import "TLStatusItemView.h"
 
-@class TSPrefWindowController;
-@class TSMainController;
+@class TLPrefWindowController;
+@class TLMainController;
 
-@interface TSAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate> {
+@interface TLAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate> {
    
     IBOutlet NSWindow * aboutTimeStack;
     
     NSStatusItem * statusItem;
 
-    TSStatusItemView *statusItemView;
+    TLStatusItemView *statusItemView;
     
-    TSMainController *timelabMainController;
+    TLMainController *timelabMainController;
 
     IBOutlet NSMenu *statusMenu;
     IBOutlet NSMenu *timeMenu;
@@ -51,7 +51,7 @@
 }
 
 @property (strong, nonatomic) NSStatusItem *statusItem;
-@property (strong, nonatomic) TSStatusItemView *statusItemView;
+@property (strong, nonatomic) TLStatusItemView *statusItemView;
 
 @property (strong, nonatomic) NSMenu *statusMenu;
 @property (strong, nonatomic) NSMenu *timeMenu;

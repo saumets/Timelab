@@ -12,7 +12,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="420" customClass="NSFontManager"/>
-        <customObject id="494" userLabel="TSAppDelegate" customClass="TSAppDelegate">
+        <customObject id="494" userLabel="TSAppDelegate" customClass="TLAppDelegate">
             <connections>
                 <outlet property="aboutTimeStack" destination="688" id="dSb-mp-hCa"/>
                 <outlet property="statusMenu" destination="537" id="543"/>

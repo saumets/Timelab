@@ -1,7 +1,7 @@
 /**
  *
- * TSClient.h
- * TimeStack
+ * TLClient.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-@class TSTimeEntry;
+@class TLTimeEntry;
 
-@interface TSClient : NSObject {
+@interface TLClient : NSObject {
 
 @private
     NSNumber *companyId;
@@ -66,6 +66,6 @@
 - (NSMutableArray *) tasksArray;
 - (NSMenu *) tasksMenu;
 
--(TSTimeEntry *)getActiveTimeEntry:(id)sender;
+-(TLTimeEntry *)getActiveTimeEntry:(id)sender;
 
 @end

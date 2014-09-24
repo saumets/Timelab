@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeOverridePopoverController.m
- * TimeStack
+ * TLTimeOverridePopoverController.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,13 +27,13 @@
  *
  **/
 
-#import "TSTimeOverridePopoverController.h"
+#import "TLTimeOverridePopoverController.h"
 
-@interface TSTimeOverridePopoverController ()
+@interface TLTimeOverridePopoverController ()
 @property (copy) void(^completionHandler)(NSString *timeValue);
 @end
 
-@implementation TSTimeOverridePopoverController
+@implementation TLTimeOverridePopoverController
 
 @synthesize overrideLabel, hoursLabel, timeOverride;
 @synthesize timeOverridePopOver;

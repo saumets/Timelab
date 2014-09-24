@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeEntryController.m
- * TimeStack
+ * TLTimeEntryController.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -28,16 +28,16 @@
  **/
 
 #import "AFNetworking.h"
-#import "TSTimeEntryController.h"
-#import "TSTimeEntry.h"
-#import "TSTask.h"
-#import "TSProject.h"
+#import "TLTimeEntryController.h"
+#import "TLTimeEntry.h"
+#import "TLTask.h"
+#import "TLProject.h"
 
-#import "TSClient.h"
+#import "TLClient.h"
 
 NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 
-@implementation TSTimeEntryController
+@implementation TLTimeEntryController
 
 @synthesize delegate;
 @synthesize clientsWithTimeEntries, activeTimeEntry;
@@ -98,7 +98,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 - (void) newTimeEntry:(id)sender {
     if ([sender isKindOfClass:[NSButton class]]) {
         
-        TSClient *client = (TSClient *)[[sender cell] representedObject];
+        TLClient *client = (TLClient *)[[sender cell] representedObject];
         
         NSError *error = nil;
         if (![self createTimeEntry:self forClient:client error:&error]) {
@@ -109,9 +109,9 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     }
 }
 
-- (BOOL) removeTimeEntry:(TSTimeEntry *)timeEntry {
+- (BOOL) removeTimeEntry:(TLTimeEntry *)timeEntry {
     
-    TSClient *client = [self findClientWithTimeEntry:timeEntry];
+    TLClient *client = [self findClientWithTimeEntry:timeEntry];
     
     // straight basic removal from array.
     
@@ -132,8 +132,8 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     return FALSE;
 }
 
-- (TSTimeEntry *) clientHasActiveTimeEntry:(TSClient *)client {
-    for(TSTimeEntry *timeEntry in [client timeEntries]) {
+- (TLTimeEntry *) clientHasActiveTimeEntry:(TLClient *)client {
+    for(TLTimeEntry *timeEntry in [client timeEntries]) {
         if ([timeEntry active]) {
             return timeEntry;
         }
@@ -141,11 +141,11 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     return nil;
 }
 
-- (TSClient *) findClientWithTimeEntry:(TSTimeEntry *)timeEntry {
+- (TLClient *) findClientWithTimeEntry:(TLTimeEntry *)timeEntry {
 
     for (NSMenuItem *clientMenuItem in [self clientsWithTimeEntries]) {
         
-        TSClient *clientItem = (TSClient *)[clientMenuItem representedObject];
+        TLClient *clientItem = (TLClient *)[clientMenuItem representedObject];
         
         if ([[clientItem timeEntries] containsObject:timeEntry]) {
             return clientItem;
@@ -155,7 +155,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     return nil;
 }
 
-- (BOOL) createTimeEntry:(id)sender forClient:(TSClient *)client error:(NSError * __autoreleasing *)error {
+- (BOOL) createTimeEntry:(id)sender forClient:(TLClient *)client error:(NSError * __autoreleasing *)error {
     
     if ([[client timeEntries] count] >= MAX_TIME_ENTRIES_PER_CLIENT) {
         NSDictionary *userInfo = @{
@@ -179,7 +179,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [self setAllTimeEntries:FALSE];
     
     // Create the new Time Entry and attach it to the client
-    TSTimeEntry *newTimeEntry = [[TSTimeEntry alloc] initWithClient:client];
+    TLTimeEntry *newTimeEntry = [[TLTimeEntry alloc] initWithClient:client];
     [newTimeEntry setActive:TRUE];
     [[client timeEntries] addObject:newTimeEntry];
     
@@ -205,7 +205,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 }
 
 - (void) editTimeEntries:(id)sender {
-    TSClient *client = (TSClient *)[sender representedObject];
+    TLClient *client = (TLClient *)[sender representedObject];
     [self loadClientTimeEntries:client];
 }
 
@@ -215,10 +215,10 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [self close];
 }
 
-- (BOOL) loadTimeEntry:(TSTimeEntry *)timeEntry {
+- (BOOL) loadTimeEntry:(TLTimeEntry *)timeEntry {
     
     // prep our reference pointer for finding our client.
-    TSClient *client = [self findClientWithTimeEntry:timeEntry];
+    TLClient *client = [self findClientWithTimeEntry:timeEntry];
     NSInteger *timeEntryIndex;
     
     if (client == nil) {
@@ -323,8 +323,8 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     return TRUE;
 }
 
-- (void) loadClientTimeEntries:(TSClient *)client {
-    TSTimeEntry *activeEntry = [self clientHasActiveTimeEntry:client];
+- (void) loadClientTimeEntries:(TLClient *)client {
+    TLTimeEntry *activeEntry = [self clientHasActiveTimeEntry:client];
     if (activeEntry) {
         [self loadTimeEntry:activeEntry];
     } else {
@@ -336,15 +336,15 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     
     for (NSMenuItem *clientMenuItem in [self clientsWithTimeEntries]) {
         
-        TSClient *client = (TSClient *)[clientMenuItem representedObject];
+        TLClient *client = (TLClient *)[clientMenuItem representedObject];
         
-        for (TSTimeEntry *timeEntry in [client timeEntries]) {
+        for (TLTimeEntry *timeEntry in [client timeEntries]) {
             [timeEntry setActive:status];
         }
     }
 }
 
-- (void) saveTimeEntryState:(TSTimeEntry *)timeEntry {
+- (void) saveTimeEntryState:(TLTimeEntry *)timeEntry {
     [timeEntry setSelectedProject:[projectOutlet selectedItem]];
     [timeEntry setSelectedTask:[taskOutlet selectedItem]];
     
@@ -357,8 +357,6 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     } else {
         [timeEntry setManualTime:NAN];
     }
-    
-    NSLog(@"Saving state - %@", timeEntry);
     
     [timeEntry setWorkDescription:[notesOutlet stringValue]];
     [timeEntry setBillable:[[NSNumber numberWithInteger:[billableOutlet state]] boolValue]];
@@ -374,12 +372,12 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     
     NSMutableArray *timeEntries = (NSMutableArray *)[[timeEntryControlOutlet selectedCell] representedObject];
     
-    [self loadTimeEntry:(TSTimeEntry *)[timeEntries objectAtIndex:selectedEntry]];
+    [self loadTimeEntry:(TLTimeEntry *)[timeEntries objectAtIndex:selectedEntry]];
 }
 
 - (IBAction)toggleTimer:(id)sender {
     
-    TSTimeEntry *timeEntry = (TSTimeEntry *)[[sender cell] representedObject];
+    TLTimeEntry *timeEntry = (TLTimeEntry *)[[sender cell] representedObject];
     
     if ([timeEntry active]) {
         [timeEntry setActive:FALSE];
@@ -402,8 +400,8 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     
         NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
         
-        TSProject *project = (TSProject *)[[showingEntry selectedProject] representedObject];
-        TSTask *task = (TSTask *)[[showingEntry selectedTask] representedObject];
+        TLProject *project = (TLProject *)[[showingEntry selectedProject] representedObject];
+        TLTask *task = (TLTask *)[[showingEntry selectedTask] representedObject];
 
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"yyyy-MM-dd"];

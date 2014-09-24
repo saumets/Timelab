@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B01967571668040900D990CC /* TSStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B01967561668040900D990CC /* TSStatusItemView.m */; };
+		B01967571668040900D990CC /* TLStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B01967561668040900D990CC /* TLStatusItemView.m */; };
 		B0E3AA3A165BF7FF004199D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3AA39165BF7FF004199D9 /* Cocoa.framework */; };
 		B0E3AA44165BF7FF004199D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA42165BF7FF004199D9 /* InfoPlist.strings */; };
 		B0E3AA46165BF7FF004199D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA45165BF7FF004199D9 /* main.m */; };
 		B0E3AA4A165BF7FF004199D9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA48165BF7FF004199D9 /* Credits.rtf */; };
-		B0E3AA4D165BF7FF004199D9 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */; };
+		B0E3AA4D165BF7FF004199D9 /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA4C165BF7FF004199D9 /* TLAppDelegate.m */; };
 		B0E3AA50165BF7FF004199D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA4E165BF7FF004199D9 /* MainMenu.xib */; };
 		B0E3AA5C165BF7FF004199D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E3AA39165BF7FF004199D9 /* Cocoa.framework */; };
 		B0E3AA64165BF7FF004199D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA62165BF7FF004199D9 /* InfoPlist.strings */; };
-		B0E3AA67165BF7FF004199D9 /* TimeStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */; };
+		B0E3AA67165BF7FF004199D9 /* TimelabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E3AA66165BF7FF004199D9 /* TimelabTests.m */; };
 		B0E3AA7C165C25D5004199D9 /* designlab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3AA7B165C25D5004199D9 /* designlab_icon.png */; };
 		B0EC811B1666816D00B1547D /* TimeEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC811A1666816D00B1547D /* TimeEntry.xib */; };
-		B0EC811F16668ADB00B1547D /* TSTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC811E16668ADB00B1547D /* TSTimeEntry.m */; };
+		B0EC811F16668ADB00B1547D /* TLTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC811E16668ADB00B1547D /* TLTimeEntry.m */; };
 		B0EC81211666911600B1547D /* designlab_logo_RGB.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EC81201666911600B1547D /* designlab_logo_RGB.png */; };
-		B0F3B01016601235000588D2 /* TSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B00F16601235000588D2 /* TSMainController.m */; };
-		B0F3B015166018CF000588D2 /* TSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B014166018CF000588D2 /* TSClient.m */; };
-		B0F3B018166018E1000588D2 /* TSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B017166018E1000588D2 /* TSProject.m */; };
-		B0F6955B165D2B9900E2704B /* TSPrefWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */; };
+		B0F3B01016601235000588D2 /* TLMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B00F16601235000588D2 /* TLMainController.m */; };
+		B0F3B015166018CF000588D2 /* TLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B014166018CF000588D2 /* TLClient.m */; };
+		B0F3B018166018E1000588D2 /* TLProject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3B017166018E1000588D2 /* TLProject.m */; };
+		B0F6955B165D2B9900E2704B /* TLPrefWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6955A165D2B9900E2704B /* TLPrefWindowController.m */; };
 		B0F6955D165D2BBB00E2704B /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6955C165D2BBB00E2704B /* Preferences.xib */; };
-		DB03C503199BFC6B005781B4 /* TSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DB03C502199BFC6B005781B4 /* TSTask.m */; };
+		DB03C503199BFC6B005781B4 /* TLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DB03C502199BFC6B005781B4 /* TLTask.m */; };
 		DB15D74819A62FCB00B3788F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73619A62FCB00B3788F /* AFHTTPRequestOperation.m */; };
 		DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73819A62FCB00B3788F /* AFHTTPRequestOperationManager.m */; };
 		DB15D74A19A62FCB00B3788F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15D73A19A62FCB00B3788F /* AFHTTPSessionManager.m */; };
@@ -39,17 +39,17 @@
 		DB15D75219A635BC00B3788F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15D75119A635BC00B3788F /* Security.framework */; };
 		DB1D319D19A4F1D80095C59A /* timestackDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */; };
 		DB3F039B19A53CD4009E9022 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */; };
-		DB9ABDAD19CB2BC10052D55B /* TSDatePickerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */; };
-		DB9ABDB019CB32CA0052D55B /* TSDateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */; };
-		DB9ABE1C19CB602A0052D55B /* TSIconTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */; };
+		DB9ABDAD19CB2BC10052D55B /* TLDatePickerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAC19CB2BC10052D55B /* TLDatePickerPopoverController.m */; };
+		DB9ABDB019CB32CA0052D55B /* TLDateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAF19CB32CA0052D55B /* TLDateTextField.m */; };
+		DB9ABE1C19CB602A0052D55B /* TLIconTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABE1B19CB602A0052D55B /* TLIconTextFieldCell.m */; };
 		DBA67B3B19CC92DD0001F41D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B3719CC92DD0001F41D /* calendar.png */; };
 		DBA67B4119CC939A0001F41D /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B3F19CC939A0001F41D /* calendar@2x.png */; };
-		DBA67B4519CC94CD0001F41D /* TSTimeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */; };
+		DBA67B4519CC94CD0001F41D /* TLTimeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67B4419CC94CD0001F41D /* TLTimeTextField.m */; };
 		DBA67B4819CC98C80001F41D /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B4619CC98C80001F41D /* clock.png */; };
 		DBA67B4919CC98C80001F41D /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA67B4719CC98C80001F41D /* clock@2x.png */; };
-		DBD3DEFE19CCADFD00D448D9 /* TSTimeOverridePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */; };
+		DBD3DEFE19CCADFD00D448D9 /* TLTimeOverridePopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3DEFD19CCADFD00D448D9 /* TLTimeOverridePopoverController.m */; };
 		DBD5611F19B77CA600CD7234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD5611E19B77CA600CD7234 /* Images.xcassets */; };
-		DBEDA37B17E7CAD900D313C6 /* TSTimeEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */; };
+		DBEDA37B17E7CAD900D313C6 /* TLTimeEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEDA37A17E7CAD900D313C6 /* TLTimeEntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B01967551668040900D990CC /* TSStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSStatusItemView.h; sourceTree = "<group>"; };
-		B01967561668040900D990CC /* TSStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSStatusItemView.m; sourceTree = "<group>"; };
+		B01967551668040900D990CC /* TLStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLStatusItemView.h; sourceTree = "<group>"; };
+		B01967561668040900D990CC /* TLStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLStatusItemView.m; sourceTree = "<group>"; };
 		B0E3AA35165BF7FF004199D9 /* Timelab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timelab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E3AA39165BF7FF004199D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B0E3AA3C165BF7FF004199D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -75,30 +75,30 @@
 		B0E3AA45165BF7FF004199D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0E3AA47165BF7FF004199D9 /* Timelab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timelab-Prefix.pch"; sourceTree = "<group>"; };
 		B0E3AA49165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
-		B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
+		B0E3AA4B165BF7FF004199D9 /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		B0E3AA4C165BF7FF004199D9 /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
 		B0E3AA4F165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B0E3AA59165BF7FF004199D9 /* TimelabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E3AA61165BF7FF004199D9 /* TimelabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimelabTests-Info.plist"; sourceTree = "<group>"; };
 		B0E3AA63165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeStackTests.h; sourceTree = "<group>"; };
-		B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeStackTests.m; sourceTree = "<group>"; };
+		B0E3AA65165BF7FF004199D9 /* TimelabTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimelabTests.h; sourceTree = "<group>"; };
+		B0E3AA66165BF7FF004199D9 /* TimelabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelabTests.m; sourceTree = "<group>"; };
 		B0E3AA7B165C25D5004199D9 /* designlab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = designlab_icon.png; sourceTree = "<group>"; };
 		B0EC811A1666816D00B1547D /* TimeEntry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeEntry.xib; sourceTree = "<group>"; };
-		B0EC811D16668ADB00B1547D /* TSTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeEntry.h; sourceTree = "<group>"; };
-		B0EC811E16668ADB00B1547D /* TSTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeEntry.m; sourceTree = "<group>"; };
+		B0EC811D16668ADB00B1547D /* TLTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimeEntry.h; sourceTree = "<group>"; };
+		B0EC811E16668ADB00B1547D /* TLTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimeEntry.m; sourceTree = "<group>"; };
 		B0EC81201666911600B1547D /* designlab_logo_RGB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = designlab_logo_RGB.png; sourceTree = "<group>"; };
-		B0F3B00E16601235000588D2 /* TSMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainController.h; sourceTree = "<group>"; };
-		B0F3B00F16601235000588D2 /* TSMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainController.m; sourceTree = "<group>"; };
-		B0F3B013166018CF000588D2 /* TSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSClient.h; sourceTree = "<group>"; };
-		B0F3B014166018CF000588D2 /* TSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSClient.m; sourceTree = "<group>"; };
-		B0F3B016166018E1000588D2 /* TSProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProject.h; sourceTree = "<group>"; };
-		B0F3B017166018E1000588D2 /* TSProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProject.m; sourceTree = "<group>"; };
-		B0F69559165D2B9900E2704B /* TSPrefWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPrefWindowController.h; sourceTree = "<group>"; };
-		B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPrefWindowController.m; sourceTree = "<group>"; };
+		B0F3B00E16601235000588D2 /* TLMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMainController.h; sourceTree = "<group>"; };
+		B0F3B00F16601235000588D2 /* TLMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMainController.m; sourceTree = "<group>"; };
+		B0F3B013166018CF000588D2 /* TLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLClient.h; sourceTree = "<group>"; };
+		B0F3B014166018CF000588D2 /* TLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLClient.m; sourceTree = "<group>"; };
+		B0F3B016166018E1000588D2 /* TLProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLProject.h; sourceTree = "<group>"; };
+		B0F3B017166018E1000588D2 /* TLProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLProject.m; sourceTree = "<group>"; };
+		B0F69559165D2B9900E2704B /* TLPrefWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPrefWindowController.h; sourceTree = "<group>"; };
+		B0F6955A165D2B9900E2704B /* TLPrefWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPrefWindowController.m; sourceTree = "<group>"; };
 		B0F6955C165D2BBB00E2704B /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		DB03C501199BFC6B005781B4 /* TSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTask.h; sourceTree = "<group>"; };
-		DB03C502199BFC6B005781B4 /* TSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTask.m; sourceTree = "<group>"; };
+		DB03C501199BFC6B005781B4 /* TLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTask.h; sourceTree = "<group>"; };
+		DB03C502199BFC6B005781B4 /* TLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTask.m; sourceTree = "<group>"; };
 		DB15D73519A62FCB00B3788F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		DB15D73619A62FCB00B3788F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		DB15D73719A62FCB00B3788F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -121,23 +121,23 @@
 		DB15D75119A635BC00B3788F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DB1D319C19A4F1D80095C59A /* timestackDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timestackDefaults.plist; sourceTree = "<group>"; };
 		DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DB9ABDAB19CB2BC10052D55B /* TSDatePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDatePickerPopoverController.h; sourceTree = "<group>"; };
-		DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDatePickerPopoverController.m; sourceTree = "<group>"; };
-		DB9ABDAE19CB32CA0052D55B /* TSDateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDateTextField.h; sourceTree = "<group>"; };
-		DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDateTextField.m; sourceTree = "<group>"; };
-		DB9ABE1A19CB602A0052D55B /* TSIconTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSIconTextFieldCell.h; sourceTree = "<group>"; };
-		DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSIconTextFieldCell.m; sourceTree = "<group>"; };
+		DB9ABDAB19CB2BC10052D55B /* TLDatePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePickerPopoverController.h; sourceTree = "<group>"; };
+		DB9ABDAC19CB2BC10052D55B /* TLDatePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePickerPopoverController.m; sourceTree = "<group>"; };
+		DB9ABDAE19CB32CA0052D55B /* TLDateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDateTextField.h; sourceTree = "<group>"; };
+		DB9ABDAF19CB32CA0052D55B /* TLDateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDateTextField.m; sourceTree = "<group>"; };
+		DB9ABE1A19CB602A0052D55B /* TLIconTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLIconTextFieldCell.h; sourceTree = "<group>"; };
+		DB9ABE1B19CB602A0052D55B /* TLIconTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLIconTextFieldCell.m; sourceTree = "<group>"; };
 		DBA67B3719CC92DD0001F41D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		DBA67B3F19CC939A0001F41D /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
-		DBA67B4319CC94CD0001F41D /* TSTimeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeTextField.h; sourceTree = "<group>"; };
-		DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeTextField.m; sourceTree = "<group>"; };
+		DBA67B4319CC94CD0001F41D /* TLTimeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimeTextField.h; sourceTree = "<group>"; };
+		DBA67B4419CC94CD0001F41D /* TLTimeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimeTextField.m; sourceTree = "<group>"; };
 		DBA67B4619CC98C80001F41D /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		DBA67B4719CC98C80001F41D /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
-		DBD3DEFC19CCADFD00D448D9 /* TSTimeOverridePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeOverridePopoverController.h; sourceTree = "<group>"; };
-		DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeOverridePopoverController.m; sourceTree = "<group>"; };
+		DBD3DEFC19CCADFD00D448D9 /* TLTimeOverridePopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimeOverridePopoverController.h; sourceTree = "<group>"; };
+		DBD3DEFD19CCADFD00D448D9 /* TLTimeOverridePopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimeOverridePopoverController.m; sourceTree = "<group>"; };
 		DBD5611E19B77CA600CD7234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTimeEntryController.h; sourceTree = "<group>"; };
-		DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTimeEntryController.m; sourceTree = "<group>"; };
+		DBEDA37917E7CAD900D313C6 /* TLTimeEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTimeEntryController.h; sourceTree = "<group>"; };
+		DBEDA37A17E7CAD900D313C6 /* TLTimeEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTimeEntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +208,10 @@
 				B0F3AFEA165FED88000588D2 /* AFNetworking */,
 				B0F69557165D2ABB00E2704B /* Preferences */,
 				B0E3AA78165C246C004199D9 /* Timelab */,
-				B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */,
-				B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */,
-				B01967551668040900D990CC /* TSStatusItemView.h */,
-				B01967561668040900D990CC /* TSStatusItemView.m */,
+				B0E3AA4B165BF7FF004199D9 /* TLAppDelegate.h */,
+				B0E3AA4C165BF7FF004199D9 /* TLAppDelegate.m */,
+				B01967551668040900D990CC /* TLStatusItemView.h */,
+				B01967561668040900D990CC /* TLStatusItemView.m */,
 				B0E3AA4E165BF7FF004199D9 /* MainMenu.xib */,
 				B0E3AA40165BF7FF004199D9 /* Supporting Files */,
 				B0E3AA7A165C258B004199D9 /* Resources */,
@@ -235,8 +235,8 @@
 		B0E3AA5F165BF7FF004199D9 /* TimelabTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */,
-				B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */,
+				B0E3AA65165BF7FF004199D9 /* TimelabTests.h */,
+				B0E3AA66165BF7FF004199D9 /* TimelabTests.m */,
 				B0E3AA60165BF7FF004199D9 /* Supporting Files */,
 			);
 			path = TimelabTests;
@@ -304,14 +304,14 @@
 		B0F3B01116601264000588D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B0F3B00E16601235000588D2 /* TSMainController.h */,
-				B0F3B00F16601235000588D2 /* TSMainController.m */,
-				DBEDA37917E7CAD900D313C6 /* TSTimeEntryController.h */,
-				DBEDA37A17E7CAD900D313C6 /* TSTimeEntryController.m */,
-				DB9ABDAB19CB2BC10052D55B /* TSDatePickerPopoverController.h */,
-				DB9ABDAC19CB2BC10052D55B /* TSDatePickerPopoverController.m */,
-				DBD3DEFC19CCADFD00D448D9 /* TSTimeOverridePopoverController.h */,
-				DBD3DEFD19CCADFD00D448D9 /* TSTimeOverridePopoverController.m */,
+				B0F3B00E16601235000588D2 /* TLMainController.h */,
+				B0F3B00F16601235000588D2 /* TLMainController.m */,
+				DBEDA37917E7CAD900D313C6 /* TLTimeEntryController.h */,
+				DBEDA37A17E7CAD900D313C6 /* TLTimeEntryController.m */,
+				DB9ABDAB19CB2BC10052D55B /* TLDatePickerPopoverController.h */,
+				DB9ABDAC19CB2BC10052D55B /* TLDatePickerPopoverController.m */,
+				DBD3DEFC19CCADFD00D448D9 /* TLTimeOverridePopoverController.h */,
+				DBD3DEFD19CCADFD00D448D9 /* TLTimeOverridePopoverController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -319,20 +319,20 @@
 		B0F3B0121660188D000588D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B0F3B013166018CF000588D2 /* TSClient.h */,
-				B0F3B014166018CF000588D2 /* TSClient.m */,
-				B0F3B016166018E1000588D2 /* TSProject.h */,
-				B0F3B017166018E1000588D2 /* TSProject.m */,
-				B0EC811D16668ADB00B1547D /* TSTimeEntry.h */,
-				B0EC811E16668ADB00B1547D /* TSTimeEntry.m */,
-				DB03C501199BFC6B005781B4 /* TSTask.h */,
-				DB03C502199BFC6B005781B4 /* TSTask.m */,
-				DB9ABDAE19CB32CA0052D55B /* TSDateTextField.h */,
-				DB9ABDAF19CB32CA0052D55B /* TSDateTextField.m */,
-				DB9ABE1A19CB602A0052D55B /* TSIconTextFieldCell.h */,
-				DB9ABE1B19CB602A0052D55B /* TSIconTextFieldCell.m */,
-				DBA67B4319CC94CD0001F41D /* TSTimeTextField.h */,
-				DBA67B4419CC94CD0001F41D /* TSTimeTextField.m */,
+				B0F3B013166018CF000588D2 /* TLClient.h */,
+				B0F3B014166018CF000588D2 /* TLClient.m */,
+				B0F3B016166018E1000588D2 /* TLProject.h */,
+				B0F3B017166018E1000588D2 /* TLProject.m */,
+				B0EC811D16668ADB00B1547D /* TLTimeEntry.h */,
+				B0EC811E16668ADB00B1547D /* TLTimeEntry.m */,
+				DB03C501199BFC6B005781B4 /* TLTask.h */,
+				DB03C502199BFC6B005781B4 /* TLTask.m */,
+				DB9ABDAE19CB32CA0052D55B /* TLDateTextField.h */,
+				DB9ABDAF19CB32CA0052D55B /* TLDateTextField.m */,
+				DB9ABE1A19CB602A0052D55B /* TLIconTextFieldCell.h */,
+				DB9ABE1B19CB602A0052D55B /* TLIconTextFieldCell.m */,
+				DBA67B4319CC94CD0001F41D /* TLTimeTextField.h */,
+				DBA67B4419CC94CD0001F41D /* TLTimeTextField.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -349,8 +349,8 @@
 		B0F69558165D2AC200E2704B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B0F69559165D2B9900E2704B /* TSPrefWindowController.h */,
-				B0F6955A165D2B9900E2704B /* TSPrefWindowController.m */,
+				B0F69559165D2B9900E2704B /* TLPrefWindowController.h */,
+				B0F6955A165D2B9900E2704B /* TLPrefWindowController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -475,30 +475,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9ABDAD19CB2BC10052D55B /* TSDatePickerPopoverController.m in Sources */,
+				DB9ABDAD19CB2BC10052D55B /* TLDatePickerPopoverController.m in Sources */,
 				DB15D74819A62FCB00B3788F /* AFHTTPRequestOperation.m in Sources */,
 				B0E3AA46165BF7FF004199D9 /* main.m in Sources */,
-				B0E3AA4D165BF7FF004199D9 /* TSAppDelegate.m in Sources */,
-				B0F6955B165D2B9900E2704B /* TSPrefWindowController.m in Sources */,
-				DB03C503199BFC6B005781B4 /* TSTask.m in Sources */,
+				B0E3AA4D165BF7FF004199D9 /* TLAppDelegate.m in Sources */,
+				B0F6955B165D2B9900E2704B /* TLPrefWindowController.m in Sources */,
+				DB03C503199BFC6B005781B4 /* TLTask.m in Sources */,
 				DB15D75019A62FCB00B3788F /* AFURLSessionManager.m in Sources */,
 				DB15D74A19A62FCB00B3788F /* AFHTTPSessionManager.m in Sources */,
 				DB15D74B19A62FCB00B3788F /* AFNetworkReachabilityManager.m in Sources */,
-				B0F3B01016601235000588D2 /* TSMainController.m in Sources */,
-				DBA67B4519CC94CD0001F41D /* TSTimeTextField.m in Sources */,
-				DBD3DEFE19CCADFD00D448D9 /* TSTimeOverridePopoverController.m in Sources */,
+				B0F3B01016601235000588D2 /* TLMainController.m in Sources */,
+				DBA67B4519CC94CD0001F41D /* TLTimeTextField.m in Sources */,
+				DBD3DEFE19CCADFD00D448D9 /* TLTimeOverridePopoverController.m in Sources */,
 				DB15D74F19A62FCB00B3788F /* AFURLResponseSerialization.m in Sources */,
 				DB15D74E19A62FCB00B3788F /* AFURLRequestSerialization.m in Sources */,
-				DB9ABE1C19CB602A0052D55B /* TSIconTextFieldCell.m in Sources */,
+				DB9ABE1C19CB602A0052D55B /* TLIconTextFieldCell.m in Sources */,
 				DB15D74D19A62FCB00B3788F /* AFURLConnectionOperation.m in Sources */,
 				DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */,
-				B0F3B015166018CF000588D2 /* TSClient.m in Sources */,
-				DB9ABDB019CB32CA0052D55B /* TSDateTextField.m in Sources */,
-				B0F3B018166018E1000588D2 /* TSProject.m in Sources */,
+				B0F3B015166018CF000588D2 /* TLClient.m in Sources */,
+				DB9ABDB019CB32CA0052D55B /* TLDateTextField.m in Sources */,
+				B0F3B018166018E1000588D2 /* TLProject.m in Sources */,
 				DB15D74C19A62FCB00B3788F /* AFSecurityPolicy.m in Sources */,
-				B0EC811F16668ADB00B1547D /* TSTimeEntry.m in Sources */,
-				B01967571668040900D990CC /* TSStatusItemView.m in Sources */,
-				DBEDA37B17E7CAD900D313C6 /* TSTimeEntryController.m in Sources */,
+				B0EC811F16668ADB00B1547D /* TLTimeEntry.m in Sources */,
+				B01967571668040900D990CC /* TLStatusItemView.m in Sources */,
+				DBEDA37B17E7CAD900D313C6 /* TLTimeEntryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E3AA67165BF7FF004199D9 /* TimeStackTests.m in Sources */,
+				B0E3AA67165BF7FF004199D9 /* TimelabTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

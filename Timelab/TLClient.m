@@ -1,7 +1,7 @@
 /**
  *
- * TSClient.m
- * TimeStack
+ * TLClient.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,10 +27,10 @@
  *
  **/
 
-#import "TSClient.h"
-#import "TSProject.h"
+#import "TLClient.h"
+#import "TLProject.h"
 
-@implementation TSClient
+@implementation TLClient
 
 @synthesize projectsMenu;
 @synthesize clientName, companyId, projectsArray, timeEntries, clientTimeEntryMenuItem;
@@ -69,12 +69,12 @@
     return tasksMenu;
 }
 
--(TSTimeEntry *)getActiveTimeEntry:(id)sender {
+-(TLTimeEntry *)getActiveTimeEntry:(id)sender {
    
     NSPredicate *aPredicate = [NSPredicate predicateWithFormat:@"active == %@", [NSNumber numberWithBool:YES]];
     NSArray *activeEntry = [timeEntries filteredArrayUsingPredicate:aPredicate];
     
-    TSTimeEntry *timeEntry = (TSTimeEntry *)[activeEntry objectAtIndex:0];
+    TLTimeEntry *timeEntry = (TLTimeEntry *)[activeEntry objectAtIndex:0];
     return timeEntry;
 }
 

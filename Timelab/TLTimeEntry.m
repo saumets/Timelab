@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeEntry.m
- * TimeStack
+ * TLTimeEntry.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-#import "TSTimeEntry.h"
+#import "TLTimeEntry.h"
 
-@implementation TSTimeEntry
+@implementation TLTimeEntry
 
 @synthesize active = _active;
 
@@ -42,7 +42,7 @@
 @synthesize workDate, workDescription;
 @synthesize manualTime;
 
--(id)initWithClient:(TSClient *)clientObject {
+-(id)initWithClient:(TLClient *)clientObject {
     self = [super init];
     if (self) {
         // Initialization code here.

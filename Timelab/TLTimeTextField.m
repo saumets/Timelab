@@ -1,7 +1,7 @@
 /**
  *
- * TSTimeTextField.m
- * TimeStack
+ * TLTimeTextField.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,18 +27,18 @@
  *
  **/
 
-#import "TSTimeTextField.h"
-#import "TSTimeOverridePopoverController.h"
+#import "TLTimeTextField.h"
+#import "TLTimeOverridePopoverController.h"
 
 #define ICON_WIDTH 16.0f
 #define ICON_HEIGHT 16.0f
 
-@interface TSTimeTextField()
-@property (strong) TSTimeOverridePopoverController *timeOverrideViewController;
+@interface TLTimeTextField()
+@property (strong) TLTimeOverridePopoverController *timeOverrideViewController;
 - (void)performClick:(id)sender;
 @end
 
-@implementation TSTimeTextField
+@implementation TLTimeTextField
 
 @synthesize timeOverrideViewController;
 
@@ -90,7 +90,7 @@
 - (void)performClick:(id)sender {
     
     if (![self timeOverrideViewController]) {
-        timeOverrideViewController = [[TSTimeOverridePopoverController alloc] init];
+        timeOverrideViewController = [[TLTimeOverridePopoverController alloc] init];
         [timeOverrideViewController.timeOverride setStringValue:@""];
         [[timeOverrideViewController.timeOverride cell] setPlaceholderString:@"0.0"];
     }

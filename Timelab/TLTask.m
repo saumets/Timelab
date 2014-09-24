@@ -1,7 +1,7 @@
 /**
  *
- * TSTask.m
- * TimeStack
+ * TLTask.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -26,9 +26,10 @@
  * SOFTWARE.
  *
  **/
-#import "TSTask.h"
 
-@implementation TSTask
+#import "TLTask.h"
+
+@implementation TLTask
 
 @synthesize taskId, taskName, categoryId, categoryName, taskStatus;
 

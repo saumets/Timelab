@@ -1,7 +1,7 @@
 /**
  *
- * TSStatusItemView.m
- * TimeStack
+ * TLStatusItemView.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,9 +27,9 @@
  *
  **/
 
-#import "TSStatusItemView.h"
+#import "TLStatusItemView.h"
 
-@implementation TSStatusItemView
+@implementation TLStatusItemView
 
 @synthesize image = _image;
 @synthesize alternateImage = _alternateImage;

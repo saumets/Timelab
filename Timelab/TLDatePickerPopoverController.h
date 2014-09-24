@@ -1,7 +1,7 @@
 /**
  *
- * TSDatePickerPopoverController.h
- * TimeStack
+ * TLDatePickerPopoverController.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,7 +27,7 @@
  *
  **/
 
-@interface TSDatePickerPopoverController : NSViewController <NSPopoverDelegate> {
+@interface TLDatePickerPopoverController : NSViewController <NSPopoverDelegate> {
 
 @public
     NSPopover *dateSelectPopOver;

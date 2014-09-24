@@ -1,7 +1,7 @@
 /**
  *
- * TSTask.h
- * TimeStack
+ * TLTask.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,7 +27,7 @@
  *
  **/
 
-@interface TSTask : NSObject {
+@interface TLTask : NSObject {
 
 @private
 

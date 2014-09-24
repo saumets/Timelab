@@ -1,7 +1,7 @@
 /**
  *
- * TimeStackTests.h
- * TimeStack
+ * TimelabTests.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -29,6 +29,6 @@
 
 #import <XCTest/XCTest.h>
 
-@interface TimeStackTests : XCTestCase
+@interface TimelabTests : XCTestCase
 
 @end

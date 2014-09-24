@@ -1,7 +1,7 @@
 /**
  *
- * TSMainController.h
- * TimeStack
+ * TLMainController.h
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,13 +27,13 @@
  *
  **/
 
-#import "TSPrefWindowController.h"
-#import "TSTimeEntryController.h"
+#import "TLPrefWindowController.h"
+#import "TLTimeEntryController.h"
 #import "AFNetworking.h"
 
-@class TSClient;
+@class TLClient;
 
-@interface TSMainController : NSObject <TSTimeEntryControllerDelegate> {
+@interface TLMainController : NSObject <TLTimeEntryControllerDelegate> {
 
 @private
     
@@ -49,14 +49,14 @@
     NSMenu *rootMenu;
     NSMenu *clientSelectMenu;
     
-    TSPrefWindowController *preferencesWindowController;
-    TSTimeEntryController *timeEntryController;
+    TLPrefWindowController *preferencesWindowController;
+    TLTimeEntryController *timeEntryController;
     
 }
 
 @property (nonatomic, assign) BOOL validConnection;
-@property (nonatomic, strong) TSPrefWindowController *preferencesWindowController;
-@property (nonatomic, strong) TSTimeEntryController *timeEntryController;
+@property (nonatomic, strong) TLPrefWindowController *preferencesWindowController;
+@property (nonatomic, strong) TLTimeEntryController *timeEntryController;
 @property (nonatomic, strong) NSMutableArray *clientsArray;
 
 @property (nonatomic, strong) NSMutableSet *clientsWithActiveTimers;

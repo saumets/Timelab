@@ -1,7 +1,7 @@
 /**
  *
- * TSDateTextField.m
- * TimeStack
+ * TLDateTextField.m
+ * Timelab
  *
  * The MIT License (MIT)
  *
@@ -27,18 +27,18 @@
  *
  **/
 
-#import "TSDateTextField.h"
-#import "TSDatePickerPopoverController.h"
+#import "TLDateTextField.h"
+#import "TLDatePickerPopoverController.h"
 
 #define ICON_WIDTH 16.0f
 #define ICON_HEIGHT 16.0f
 
-@interface TSDateTextField()
-@property (strong) TSDatePickerPopoverController *datePickerViewController;
+@interface TLDateTextField()
+@property (strong) TLDatePickerPopoverController *datePickerViewController;
 - (void)performClick:(id)sender;
 @end;
 
-@implementation TSDateTextField
+@implementation TLDateTextField
 
 @synthesize datePickerViewController;
 
@@ -110,7 +110,7 @@
 - (void)performClick:(id)sender {
     
     if (![self datePickerViewController]) {
-        datePickerViewController = [[TSDatePickerPopoverController alloc] init];
+        datePickerViewController = [[TLDatePickerPopoverController alloc] init];
         [datePickerViewController.datePicker setDateValue:[NSDate date]];
     }
 
