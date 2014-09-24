@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1090" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
     </dependencies>
     <objects>
@@ -147,10 +146,10 @@ Gw
                             <action selector="toggleTimer:" target="-2" id="rkc-v4-oFb"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="Jme-dj-BfJ" customClass="TSTimeTextField">
+                    <textField verticalHuggingPriority="750" id="Jme-dj-BfJ" customClass="TLTimeTextField">
                         <rect key="frame" x="267" y="180" width="101" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" placeholderString="00:00:00" drawsBackground="YES" id="ZEd-RZ-p8t" customClass="TSIconTextFieldCell">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" placeholderString="00:00:00" drawsBackground="YES" id="ZEd-RZ-p8t" customClass="TLIconTextFieldCell">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -187,10 +186,10 @@ Gw
                             <action selector="clickedTimeEntryRemoveOutlet:" target="-2" id="cRH-S6-i2W"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="pJZ-hA-kPz" customClass="TSDateTextField">
+                    <textField verticalHuggingPriority="750" id="pJZ-hA-kPz" customClass="TLDateTextField">
                         <rect key="frame" x="267" y="214" width="101" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" placeholderString="05/22/14" drawsBackground="YES" id="enr-qB-kVr" customClass="TSIconTextFieldCell">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" placeholderString="05/22/14" drawsBackground="YES" id="enr-qB-kVr" customClass="TLIconTextFieldCell">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
