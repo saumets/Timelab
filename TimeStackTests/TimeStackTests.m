@@ -47,7 +47,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in TimeStackTests");
+    XCTFail(@"Unit tests are not implemented yet in TimeStackTests");
 }
 
 @end

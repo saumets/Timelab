@@ -27,8 +27,8 @@
  *
  **/
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface TimeStackTests : SenTestCase
+@interface TimeStackTests : XCTestCase
 
 @end
