@@ -5,7 +5,7 @@ Timelab. A Mac OS X status bar (NSStatusItem) time tracking application which in
 
 ## Requirements
 
-- Mac OS X 10.8+
+- Mac OS X 10.9+
 - Apple Xcode 5+
 - AFNetworking 2.0 (included)
 
