@@ -264,7 +264,6 @@
         TSProject *newProject = [[TSProject alloc] initWithAttributes:projectId withTitle:projectName andStatus:projectStatus];
         
         if ([self addProjectToClient:newProject withClientId:client_id]) {
-            //NSLog(@"Client: %@ - Project: %@", [newProject.projectClient clientName], [newProject projectTitle]);
             continue;
         } else {
             NSLog(@"Error: Could not add project to client. Client not found!");
@@ -329,9 +328,12 @@
         [project setProjectClient:client];
         [[client projectsArray] addObject:project];
         
-        NSMenuItem *projectMenuItem = [[NSMenuItem alloc] initWithTitle:[project projectTitle] action:nil keyEquivalent:@""];
-        [projectMenuItem setRepresentedObject:project];
-        [[client projectsMenu] addItem:projectMenuItem];
+        // TODO: Need to add configuration option for whether we include all projects or only active projects.
+        if ([project projectStatus]) {
+            NSMenuItem *projectMenuItem = [[NSMenuItem alloc] initWithTitle:[project projectTitle] action:nil keyEquivalent:@""];
+            [projectMenuItem setRepresentedObject:project];
+            [[client projectsMenu] addItem:projectMenuItem];
+        }
     }
     
     return TRUE;
@@ -341,7 +343,6 @@
     
     if (!preferencesWindowController) {
         preferencesWindowController = [[TSPrefWindowController alloc] init];
-        //[self.preferencesWindowController setDelegate:self];
     }
     
     [NSApp activateIgnoringOtherApps:YES];

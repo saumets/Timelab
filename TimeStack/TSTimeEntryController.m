@@ -84,7 +84,9 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 
 - (void)windowDidResignKey:(NSNotification *)notification {
     NSLog(@"Houston...we lost a panel.");
-    [self saveTimeEntryState:showingEntry];
+    if (showingEntry) {
+        [self saveTimeEntryState:showingEntry];
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -356,7 +358,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         [timeEntry setManualTime:NAN];
     }
     
-    NSLog(@"Saving state.");
+    NSLog(@"Saving state - %@", timeEntry);
     
     [timeEntry setWorkDescription:[notesOutlet stringValue]];
     [timeEntry setBillable:[[NSNumber numberWithInteger:[billableOutlet state]] boolValue]];
@@ -436,7 +438,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         [[manager requestSerializer] setAuthorizationHeaderFieldWithUsername:authUser password:authPass];
     
         [manager POST:[NSString stringWithFormat:@"%@?api_key=%@", @"time", apiKey] parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
-            //
+
             NSLog(@"Post Success: %@",responseObject);
             
             [self removeTimeEntry:showingEntry];
