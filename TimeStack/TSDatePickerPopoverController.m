@@ -52,6 +52,8 @@
             [datePicker setTarget:self];
             [datePicker setAction:@selector(dateChanged:)];
             
+            [datePicker setTimeZone:[NSTimeZone localTimeZone]];
+            
             [self.view addSubview:datePicker];
         }
     }

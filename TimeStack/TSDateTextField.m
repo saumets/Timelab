@@ -125,8 +125,8 @@
         NSDateFormatter *format = [[NSDateFormatter alloc] init];
         [format setDateFormat:@"MM/dd/YY"];
         //[format setDateStyle:NSDateFormatterLongStyle];
-        [self setStringValue:[format stringFromDate:selectedDate]];
-        //[[self cell] setPlaceholderString:[format stringFromDate:selectedDate]];
+        //[self setStringValue:[format stringFromDate:selectedDate]];
+        [[self cell] setPlaceholderString:[format stringFromDate:selectedDate]];
     }];
  }
 

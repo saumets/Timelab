@@ -301,7 +301,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     }
 
     
-    [dateFormatter setDateFormat:@"MM/dd/YY"];
+    [dateFormatter setDateFormat:@"MM/dd/yy"];
     [dateDisplayOutlet setAlignment:NSRightTextAlignment];
     [[dateDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:[timeEntry workDate]]];
     // [dateDisplayOutlet setStringValue:[dateFormatter stringFromDate:[timeEntry workDate]]];
@@ -347,14 +347,16 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [timeEntry setSelectedTask:[taskOutlet selectedItem]];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM/dd/YY"];
+    [dateFormatter setDateFormat:@"MM/dd/yy"];
     [timeEntry setWorkDate:[dateFormatter dateFromString:[[dateDisplayOutlet cell] placeholderString]]];
-
+    
     if ([timeDisplayOutlet stringValue] && [[timeDisplayOutlet stringValue] length] > 0) {
         [timeEntry setManualTime:[timeDisplayOutlet doubleValue]];
     } else {
         [timeEntry setManualTime:NAN];
     }
+    
+    NSLog(@"Saving state.");
     
     [timeEntry setWorkDescription:[notesOutlet stringValue]];
     [timeEntry setBillable:[[NSNumber numberWithInteger:[billableOutlet state]] boolValue]];
@@ -400,8 +402,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         
         TSProject *project = (TSProject *)[[showingEntry selectedProject] representedObject];
         TSTask *task = (TSTask *)[[showingEntry selectedTask] representedObject];
-    
-        NSDate *date = [showingEntry workDate];
+
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"yyyy-MM-dd"];
     
@@ -412,7 +413,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         }
     
         parameters[@"project_id"] = [[project projectId] stringValue];
-        parameters[@"date"] = [dateFormat stringFromDate:date];
+        parameters[@"date"] = [dateFormat stringFromDate:[showingEntry workDate]];
         parameters[@"hours"] = [NSString stringWithFormat:@"%.02lf", hours];
         parameters[@"billable"] = [NSNumber numberWithBool:[showingEntry billable]];
         parameters[@"task_id"] = [[task taskId] stringValue];
