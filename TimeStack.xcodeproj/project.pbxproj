@@ -78,7 +78,7 @@
 		B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		B0E3AA4F165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStackTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E3AA61165BF7FF004199D9 /* TimeStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeStackTests-Info.plist"; sourceTree = "<group>"; };
 		B0E3AA63165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeStackTests.h; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B0E3AA35165BF7FF004199D9 /* TimeStack.app */,
-				B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */,
+				B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 			);
 			name = TimeStackTests;
 			productName = "Lab ControlTests";
-			productReference = B0E3AA59165BF7FF004199D9 /* TimeStackTests.octest */;
+			productReference = B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
