@@ -65,21 +65,21 @@
 /* Begin PBXFileReference section */
 		B01967551668040900D990CC /* TSStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSStatusItemView.h; sourceTree = "<group>"; };
 		B01967561668040900D990CC /* TSStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSStatusItemView.m; sourceTree = "<group>"; };
-		B0E3AA35165BF7FF004199D9 /* TimeStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3AA35165BF7FF004199D9 /* Timelab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timelab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E3AA39165BF7FF004199D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B0E3AA3C165BF7FF004199D9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B0E3AA3D165BF7FF004199D9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B0E3AA3E165BF7FF004199D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B0E3AA41165BF7FF004199D9 /* TimeStack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeStack-Info.plist"; sourceTree = "<group>"; };
+		B0E3AA41165BF7FF004199D9 /* Timelab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timelab-Info.plist"; sourceTree = "<group>"; };
 		B0E3AA43165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0E3AA45165BF7FF004199D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B0E3AA47165BF7FF004199D9 /* TimeStack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeStack-Prefix.pch"; sourceTree = "<group>"; };
+		B0E3AA47165BF7FF004199D9 /* Timelab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timelab-Prefix.pch"; sourceTree = "<group>"; };
 		B0E3AA49165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		B0E3AA4F165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0E3AA61165BF7FF004199D9 /* TimeStackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimeStackTests-Info.plist"; sourceTree = "<group>"; };
+		B0E3AA59165BF7FF004199D9 /* TimelabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E3AA61165BF7FF004199D9 /* TimelabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimelabTests-Info.plist"; sourceTree = "<group>"; };
 		B0E3AA63165BF7FF004199D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeStackTests.h; sourceTree = "<group>"; };
 		B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeStackTests.m; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 		B0E3AA2A165BF7FF004199D9 = {
 			isa = PBXGroup;
 			children = (
-				B0E3AA3F165BF7FF004199D9 /* TimeStack */,
-				B0E3AA5F165BF7FF004199D9 /* TimeStackTests */,
+				B0E3AA3F165BF7FF004199D9 /* Timelab */,
+				B0E3AA5F165BF7FF004199D9 /* TimelabTests */,
 				B0E3AA38165BF7FF004199D9 /* Frameworks */,
 				B0E3AA36165BF7FF004199D9 /* Products */,
 			);
@@ -175,8 +175,8 @@
 		B0E3AA36165BF7FF004199D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0E3AA35165BF7FF004199D9 /* TimeStack.app */,
-				B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */,
+				B0E3AA35165BF7FF004199D9 /* Timelab.app */,
+				B0E3AA59165BF7FF004199D9 /* TimelabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,12 +202,12 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		B0E3AA3F165BF7FF004199D9 /* TimeStack */ = {
+		B0E3AA3F165BF7FF004199D9 /* Timelab */ = {
 			isa = PBXGroup;
 			children = (
 				B0F3AFEA165FED88000588D2 /* AFNetworking */,
 				B0F69557165D2ABB00E2704B /* Preferences */,
-				B0E3AA78165C246C004199D9 /* TimeStack */,
+				B0E3AA78165C246C004199D9 /* Timelab */,
 				B0E3AA4B165BF7FF004199D9 /* TSAppDelegate.h */,
 				B0E3AA4C165BF7FF004199D9 /* TSAppDelegate.m */,
 				B01967551668040900D990CC /* TSStatusItemView.h */,
@@ -217,48 +217,48 @@
 				B0E3AA7A165C258B004199D9 /* Resources */,
 				DBD5611E19B77CA600CD7234 /* Images.xcassets */,
 			);
-			path = TimeStack;
+			path = Timelab;
 			sourceTree = "<group>";
 		};
 		B0E3AA40165BF7FF004199D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0E3AA41165BF7FF004199D9 /* TimeStack-Info.plist */,
+				B0E3AA41165BF7FF004199D9 /* Timelab-Info.plist */,
 				B0E3AA42165BF7FF004199D9 /* InfoPlist.strings */,
 				B0E3AA45165BF7FF004199D9 /* main.m */,
-				B0E3AA47165BF7FF004199D9 /* TimeStack-Prefix.pch */,
+				B0E3AA47165BF7FF004199D9 /* Timelab-Prefix.pch */,
 				B0E3AA48165BF7FF004199D9 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0E3AA5F165BF7FF004199D9 /* TimeStackTests */ = {
+		B0E3AA5F165BF7FF004199D9 /* TimelabTests */ = {
 			isa = PBXGroup;
 			children = (
 				B0E3AA65165BF7FF004199D9 /* TimeStackTests.h */,
 				B0E3AA66165BF7FF004199D9 /* TimeStackTests.m */,
 				B0E3AA60165BF7FF004199D9 /* Supporting Files */,
 			);
-			path = TimeStackTests;
+			path = TimelabTests;
 			sourceTree = "<group>";
 		};
 		B0E3AA60165BF7FF004199D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0E3AA61165BF7FF004199D9 /* TimeStackTests-Info.plist */,
+				B0E3AA61165BF7FF004199D9 /* TimelabTests-Info.plist */,
 				B0E3AA62165BF7FF004199D9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0E3AA78165C246C004199D9 /* TimeStack */ = {
+		B0E3AA78165C246C004199D9 /* Timelab */ = {
 			isa = PBXGroup;
 			children = (
 				B0EC811A1666816D00B1547D /* TimeEntry.xib */,
 				B0F3B0121660188D000588D2 /* Models */,
 				B0F3B01116601264000588D2 /* Controllers */,
 			);
-			name = TimeStack;
+			name = Timelab;
 			sourceTree = "<group>";
 		};
 		B0E3AA7A165C258B004199D9 /* Resources */ = {
@@ -358,9 +358,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0E3AA34165BF7FF004199D9 /* TimeStack */ = {
+		B0E3AA34165BF7FF004199D9 /* Timelab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStack" */;
+			buildConfigurationList = B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "Timelab" */;
 			buildPhases = (
 				B0E3AA31165BF7FF004199D9 /* Sources */,
 				B0E3AA32165BF7FF004199D9 /* Frameworks */,
@@ -370,14 +370,14 @@
 			);
 			dependencies = (
 			);
-			name = TimeStack;
+			name = Timelab;
 			productName = "Lab Control";
-			productReference = B0E3AA35165BF7FF004199D9 /* TimeStack.app */;
+			productReference = B0E3AA35165BF7FF004199D9 /* Timelab.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0E3AA58165BF7FF004199D9 /* TimeStackTests */ = {
+		B0E3AA58165BF7FF004199D9 /* TimelabTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStackTests" */;
+			buildConfigurationList = B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimelabTests" */;
 			buildPhases = (
 				B0E3AA54165BF7FF004199D9 /* Sources */,
 				B0E3AA55165BF7FF004199D9 /* Frameworks */,
@@ -389,9 +389,9 @@
 			dependencies = (
 				B0E3AA5E165BF7FF004199D9 /* PBXTargetDependency */,
 			);
-			name = TimeStackTests;
+			name = TimelabTests;
 			productName = "Lab ControlTests";
-			productReference = B0E3AA59165BF7FF004199D9 /* TimeStackTests.xctest */;
+			productReference = B0E3AA59165BF7FF004199D9 /* TimelabTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +405,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Design Lab Inc.";
 			};
-			buildConfigurationList = B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "TimeStack" */;
+			buildConfigurationList = B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "Timelab" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -417,8 +417,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0E3AA34165BF7FF004199D9 /* TimeStack */,
-				B0E3AA58165BF7FF004199D9 /* TimeStackTests */,
+				B0E3AA34165BF7FF004199D9 /* Timelab */,
+				B0E3AA58165BF7FF004199D9 /* TimelabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -515,7 +515,7 @@
 /* Begin PBXTargetDependency section */
 		B0E3AA5E165BF7FF004199D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0E3AA34165BF7FF004199D9 /* TimeStack */;
+			target = B0E3AA34165BF7FF004199D9 /* Timelab */;
 			targetProxy = B0E3AA5D165BF7FF004199D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -613,10 +613,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
-				INFOPLIST_FILE = "TimeStack/TimeStack-Info.plist";
+				GCC_PREFIX_HEADER = "Timelab/Timelab-Prefix.pch";
+				INFOPLIST_FILE = "Timelab/Timelab-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = TimeStack;
+				PRODUCT_NAME = Timelab;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -627,10 +627,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
-				INFOPLIST_FILE = "TimeStack/TimeStack-Info.plist";
+				GCC_PREFIX_HEADER = "Timelab/Timelab-Prefix.pch";
+				INFOPLIST_FILE = "Timelab/Timelab-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = TimeStack;
+				PRODUCT_NAME = Timelab;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -646,8 +646,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
-				INFOPLIST_FILE = "TimeStackTests/TimeStackTests-Info.plist";
-				PRODUCT_NAME = TimeStackTests;
+				INFOPLIST_FILE = "TimeStackTests/TimelabTests-Info.plist";
+				PRODUCT_NAME = TimelabTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -663,8 +663,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TimeStack/TimeStack-Prefix.pch";
-				INFOPLIST_FILE = "TimeStackTests/TimeStackTests-Info.plist";
-				PRODUCT_NAME = TimeStackTests;
+				INFOPLIST_FILE = "TimeStackTests/TimelabTests-Info.plist";
+				PRODUCT_NAME = TimelabTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -672,7 +672,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "TimeStack" */ = {
+		B0E3AA2F165BF7FF004199D9 /* Build configuration list for PBXProject "Timelab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0E3AA68165BF7FF004199D9 /* Debug */,
@@ -681,7 +681,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStack" */ = {
+		B0E3AA6A165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "Timelab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0E3AA6B165BF7FF004199D9 /* Debug */,
@@ -690,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimeStackTests" */ = {
+		B0E3AA6D165BF7FF004199D9 /* Build configuration list for PBXNativeTarget "TimelabTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0E3AA6E165BF7FF004199D9 /* Debug */,

@@ -21,7 +21,7 @@
         </customObject>
         <menu id="537">
             <items>
-                <menuItem title="About Timestack" id="686">
+                <menuItem title="About Timelab" id="686">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="openAboutTimeStack:" target="494" id="49z-wh-IiL"/>
@@ -68,7 +68,7 @@
                                 <textField verticalHuggingPriority="750" id="701">
                                     <rect key="frame" x="221" y="91" width="220" height="45"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Timestack.app" id="702">
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Timelab.app" id="702">
                                         <font key="font" metaFont="systemBold" size="24"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
