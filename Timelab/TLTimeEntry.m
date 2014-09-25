@@ -50,6 +50,7 @@
         [self setClient:clientObject];
         workDate = [NSDate date];
         manualTime = NAN;
+        billable = TRUE;
         workDescription = [[NSString alloc] init];
     }
     

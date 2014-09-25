@@ -293,12 +293,10 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
         if ([timeEntry active]) {
             [timerToggleOutlet setTitle:@"Pause"];
             activeTimeEntry = timeEntry;
-            // [timeDisplayOutlet setStringValue:[timeEntry updateTimeEntry:self]];
             [[timeDisplayOutlet cell] setPlaceholderString:[timeEntry updateTimeEntry:self]];
         } else {
             [timerToggleOutlet setTitle:@"Start"];
             activeTimeEntry = nil;
-            // [timeDisplayOutlet setStringValue:[dateFormatter stringFromDate:timerDate]];
             [[timeDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:timerDate]];
         }
     } else {
@@ -308,11 +306,16 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     [dateFormatter setDateFormat:@"MM/dd/yy"];
     [dateDisplayOutlet setAlignment:NSRightTextAlignment];
     [[dateDisplayOutlet cell] setPlaceholderString:[dateFormatter stringFromDate:[timeEntry workDate]]];
-    // [dateDisplayOutlet setStringValue:[dateFormatter stringFromDate:[timeEntry workDate]]];
     
     // START/PAUSE TIME BUTTON TOGGLE
     [[timerToggleOutlet cell] setRepresentedObject:timeEntry];
     [[submitTimeEntryOutlet cell] setRepresentedObject:timeEntry];
+    
+    if ([timeEntry billable]) {
+        [billableOutlet setState:TRUE];
+    } else {
+        [billableOutlet setState:FALSE];
+    }
     
     [notesOutlet setStringValue:[timeEntry workDescription]];
     
@@ -397,8 +400,15 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 
 - (void) submitTimeEntry:(id)sender {
     
+        // prevent double submissions
+        [submitTimeEntryOutlet setEnabled:FALSE];
+    
         [self saveTimeEntryState:showingEntry];
-        [showingEntry setActive:FALSE];
+    
+        if ([showingEntry active]) {
+            activeTimeEntry = nil;
+            [showingEntry setActive:FALSE];
+        }
     
         NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
         
@@ -442,9 +452,10 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
             NSLog(@"Post Success: %@",responseObject);
             
             [self removeTimeEntry:showingEntry];
+            [submitTimeEntryOutlet setEnabled:TRUE];
             
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
-
+            [submitTimeEntryOutlet setEnabled:TRUE];
         }];
 }
 
