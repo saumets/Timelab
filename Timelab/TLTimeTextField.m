@@ -92,7 +92,7 @@
     if (![self timeOverrideViewController]) {
         timeOverrideViewController = [[TLTimeOverridePopoverController alloc] init];
         [timeOverrideViewController.timeOverride setStringValue:@""];
-        [[timeOverrideViewController.timeOverride cell] setPlaceholderString:@"0.0"];
+        [[timeOverrideViewController.timeOverride cell] setPlaceholderString:@"0.00"];
     }
     
     //[timeOverrideViewController.timeOverride setDelegate:self];
@@ -102,7 +102,13 @@
     }
 	
 	[timeOverrideViewController showTimeOverrideRelativeToRect:[sender bounds] inView:sender completionHander:^(NSString *timeValue) {
-        [self setStringValue:timeValue];
+        
+        double hours = [timeValue doubleValue];
+        if (hours > 0.00) {
+            [self setStringValue:[NSString stringWithFormat:@"%.02lf",hours]];
+        } else {
+            [self setStringValue:@""];
+        }
     }];
 }
 
