@@ -45,8 +45,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // set up our NSUserDefaults if this is first run.
-    NSURL *timestackDefaultsFile = [[NSBundle mainBundle] URLForResource:@"timestackDefaults" withExtension:@"plist"];
-    NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfURL:timestackDefaultsFile];
+    NSURL *timelabDefaultsFile = [[NSBundle mainBundle] URLForResource:@"timelabDefaults" withExtension:@"plist"];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfURL:timelabDefaultsFile];
     [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
     
     // setup custom view that implements mouseDown: and rightMouseDown:
