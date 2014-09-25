@@ -286,6 +286,9 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     
     // check if manual time entry exists for this entry.
     if (isnan([timeEntry manualTime])) {
+        
+        [timeDisplayOutlet setStringValue:@""];
+
         // manual entry does not exist - show our timer values
         if ([timeEntry active]) {
             [timerToggleOutlet setTitle:@"Pause"];
@@ -301,7 +304,6 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     } else {
         [timeDisplayOutlet setStringValue:[NSString stringWithFormat:@"%.02lf",[timeEntry manualTime]]];
     }
-
     
     [dateFormatter setDateFormat:@"MM/dd/yy"];
     [dateDisplayOutlet setAlignment:NSRightTextAlignment];

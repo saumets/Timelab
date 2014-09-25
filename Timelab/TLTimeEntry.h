@@ -68,7 +68,7 @@
 @property (nonatomic, strong) NSNumber * taskId;
 @property (nonatomic, assign) BOOL billable;
 @property (nonatomic, strong) NSDate *workDate;
-@property (nonatomic) double  manualTime;
+@property (nonatomic, assign) double  manualTime;
 @property (nonatomic, strong) NSString * workDescription;
 
 -(id) initWithClient:(TLClient *) clientObject;
