@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>timestack-baseurl</key>
+	<key>timelab-baseurl</key>
 	<string></string>
-	<key>timestack-apikey</key>
+	<key>timelab-apikey</key>
 	<string></string>
-	<key>timestack-authuser</key>
+	<key>timelab-authuser</key>
 	<string></string>
-	<key>timestack-authpass</key>
+	<key>timelab-authpass</key>
 	<string></string>
 </dict>
 </plist>

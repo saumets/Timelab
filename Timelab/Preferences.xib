@@ -7,10 +7,10 @@
         <customObject id="-2" userLabel="File's Owner" customClass="TLPrefWindowController">
             <connections>
                 <outlet property="prefPanel" destination="823" id="NRG-iN-Sdc"/>
-                <outlet property="timestackAPIKey" destination="Pad-71-9Gp" id="Rtp-r1-slp"/>
-                <outlet property="timestackAuthPassword" destination="Y7n-Ax-vUl" id="khz-HO-J6H"/>
-                <outlet property="timestackAuthUsername" destination="NoQ-s0-elp" id="NuY-F4-m9a"/>
-                <outlet property="timestackBaseURL" destination="958" id="pSX-3E-YcW"/>
+                <outlet property="timelabAPIKey" destination="Pad-71-9Gp" id="gbP-BA-OHK"/>
+                <outlet property="timelabAuthPassword" destination="Y7n-Ax-vUl" id="cT3-IP-J8c"/>
+                <outlet property="timelabAuthUsername" destination="NoQ-s0-elp" id="453-H9-rzW"/>
+                <outlet property="timelabBaseURL" destination="958" id="5fr-ZA-uFa"/>
                 <outlet property="window" destination="823" id="904"/>
             </connections>
         </customObject>

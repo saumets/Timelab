@@ -99,11 +99,11 @@
 
 - (void) refreshTimelab {
     
-    NSString *URL = [[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-baseurl"];
-    NSString *apiKey = [[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-apikey"];
+    NSString *URL = [[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-baseurl"];
+    NSString *apiKey = [[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-apikey"];
 
-    NSString *authUser = [[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authuser"];
-    NSString *authPass = [[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authpass"];
+    NSString *authUser = [[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-authuser"];
+    NSString *authPass = [[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-authpass"];
     
     NSURL *baseURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@",URL]];
     

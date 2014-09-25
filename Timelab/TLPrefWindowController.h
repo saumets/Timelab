@@ -38,16 +38,16 @@
     IBOutlet NSPanel *prefPanel;
     
     // Preference Options
-    __weak IBOutlet NSTextField *timestackBaseURL;
-    __weak IBOutlet NSTextField *timestackAPIKey;
-    __weak IBOutlet NSTextField *timestackAuthUsername;
-    __weak IBOutlet NSTextField *timestackAuthPassword;
+    __weak IBOutlet NSTextField *timelabBaseURL;
+    __weak IBOutlet NSTextField *timelabAPIKey;
+    __weak IBOutlet NSTextField *timelabAuthUsername;
+    __weak IBOutlet NSTextField *timelabAuthPassword;
 }
 
-@property (weak) IBOutlet NSTextField *timestackBaseURL;
-@property (weak) IBOutlet NSTextField *timestackAPIKey;
-@property (weak) IBOutlet NSTextField *timestackAuthUsername;
-@property (weak) IBOutlet NSTextField *timestackAuthPassword;
+@property (weak) IBOutlet NSTextField *timelabBaseURL;
+@property (weak) IBOutlet NSTextField *timelabAPIKey;
+@property (weak) IBOutlet NSTextField *timelabAuthUsername;
+@property (weak) IBOutlet NSTextField *timelabAuthPassword;
 
 - (IBAction) savePreferences:(id)sender;
 - (IBAction) closePreferences:(id)sender;
