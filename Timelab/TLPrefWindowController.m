@@ -36,7 +36,7 @@
 
 @implementation TLPrefWindowController
 
-@synthesize timestackAPIKey, timestackBaseURL,timestackAuthUsername, timestackAuthPassword;
+@synthesize timelabAPIKey, timelabBaseURL,timelabAuthUsername, timelabAuthPassword;
 
 - (id)init {
     self = [super initWithWindowNibName:@"Preferences"];
@@ -47,10 +47,10 @@
         [closeButton setTarget:self];
         [closeButton setAction:@selector(closePreferences:)];
         
-        [timestackBaseURL setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-baseurl"]];
-        [timestackAPIKey setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-apikey"]];
-        [timestackAuthUsername setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authuser"]];
-        [timestackAuthPassword setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timestack-authpass"]];
+        [timelabBaseURL setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-baseurl"]];
+        [timelabAPIKey setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-apikey"]];
+        [timelabAuthUsername setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-authuser"]];
+        [timelabAuthPassword setStringValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"timelab-authpass"]];
 
     }
     
@@ -65,10 +65,10 @@
 }
 
 - (void) savePreferences:(id)sender {
-    [[NSUserDefaults standardUserDefaults] setObject:[timestackBaseURL stringValue] forKey:@"timestack-baseurl"];
-    [[NSUserDefaults standardUserDefaults] setObject:[timestackAPIKey stringValue] forKey:@"timestack-apikey"];
-    [[NSUserDefaults standardUserDefaults] setObject:[timestackAuthUsername stringValue] forKey:@"timestack-authuser"];
-    [[NSUserDefaults standardUserDefaults] setObject:[timestackAuthPassword stringValue] forKey:@"timestack-authpass"];
+    [[NSUserDefaults standardUserDefaults] setObject:[timelabBaseURL stringValue] forKey:@"timelab-baseurl"];
+    [[NSUserDefaults standardUserDefaults] setObject:[timelabAPIKey stringValue] forKey:@"timelab-apikey"];
+    [[NSUserDefaults standardUserDefaults] setObject:[timelabAuthUsername stringValue] forKey:@"timelab-authuser"];
+    [[NSUserDefaults standardUserDefaults] setObject:[timelabAuthPassword stringValue] forKey:@"timelab-authpass"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
