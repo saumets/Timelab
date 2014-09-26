@@ -39,6 +39,7 @@
 		DB15D75219A635BC00B3788F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB15D75119A635BC00B3788F /* Security.framework */; };
 		DB1D319D19A4F1D80095C59A /* timelabDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB1D319C19A4F1D80095C59A /* timelabDefaults.plist */; };
 		DB3F039B19A53CD4009E9022 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */; };
+		DB528ABD19D4B67E00B67116 /* TLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB528ABC19D4B67E00B67116 /* TLTextField.m */; };
 		DB9ABDAD19CB2BC10052D55B /* TLDatePickerPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAC19CB2BC10052D55B /* TLDatePickerPopoverController.m */; };
 		DB9ABDB019CB32CA0052D55B /* TLDateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABDAF19CB32CA0052D55B /* TLDateTextField.m */; };
 		DB9ABE1C19CB602A0052D55B /* TLIconTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABE1B19CB602A0052D55B /* TLIconTextFieldCell.m */; };
@@ -121,6 +122,8 @@
 		DB15D75119A635BC00B3788F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DB1D319C19A4F1D80095C59A /* timelabDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = timelabDefaults.plist; sourceTree = "<group>"; };
 		DB3F039919A53BBD009E9022 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DB528ABB19D4B67E00B67116 /* TLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTextField.h; sourceTree = "<group>"; };
+		DB528ABC19D4B67E00B67116 /* TLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTextField.m; sourceTree = "<group>"; };
 		DB9ABDAB19CB2BC10052D55B /* TLDatePickerPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDatePickerPopoverController.h; sourceTree = "<group>"; };
 		DB9ABDAC19CB2BC10052D55B /* TLDatePickerPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDatePickerPopoverController.m; sourceTree = "<group>"; };
 		DB9ABDAE19CB32CA0052D55B /* TLDateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDateTextField.h; sourceTree = "<group>"; };
@@ -333,6 +336,8 @@
 				DB9ABE1B19CB602A0052D55B /* TLIconTextFieldCell.m */,
 				DBA67B4319CC94CD0001F41D /* TLTimeTextField.h */,
 				DBA67B4419CC94CD0001F41D /* TLTimeTextField.m */,
+				DB528ABB19D4B67E00B67116 /* TLTextField.h */,
+				DB528ABC19D4B67E00B67116 /* TLTextField.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -494,6 +499,7 @@
 				DB15D74919A62FCB00B3788F /* AFHTTPRequestOperationManager.m in Sources */,
 				B0F3B015166018CF000588D2 /* TLClient.m in Sources */,
 				DB9ABDB019CB32CA0052D55B /* TLDateTextField.m in Sources */,
+				DB528ABD19D4B67E00B67116 /* TLTextField.m in Sources */,
 				B0F3B018166018E1000588D2 /* TLProject.m in Sources */,
 				DB15D74C19A62FCB00B3788F /* AFSecurityPolicy.m in Sources */,
 				B0EC811F16668ADB00B1547D /* TLTimeEntry.m in Sources */,

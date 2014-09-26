@@ -349,6 +349,13 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
     }
 }
 
+- (void) setButtonStates:(BOOL)state {
+    [submitTimeEntryOutlet setEnabled:state];
+    [timeEntryCreateOutlet setEnabled:state];
+    [timeEntryRemoveOutlet setEnabled:state];
+    [timerToggleOutlet setEnabled:state];
+}
+
 - (void) saveTimeEntryState:(TLTimeEntry *)timeEntry {
     [timeEntry setSelectedProject:[projectOutlet selectedItem]];
     [timeEntry setSelectedTask:[taskOutlet selectedItem]];
@@ -401,7 +408,7 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
 - (void) submitTimeEntry:(id)sender {
     
         // prevent double submissions
-        [submitTimeEntryOutlet setEnabled:FALSE];
+        [self setButtonStates:FALSE];
     
         [self saveTimeEntryState:showingEntry];
     
@@ -452,10 +459,10 @@ NSUInteger const MAX_TIME_ENTRIES_PER_CLIENT = 5;
             NSLog(@"Post Success: %@",responseObject);
             
             [self removeTimeEntry:showingEntry];
-            [submitTimeEntryOutlet setEnabled:TRUE];
+            [self setButtonStates:TRUE];
             
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            [submitTimeEntryOutlet setEnabled:TRUE];
+            [self setButtonStates:TRUE];
         }];
 }
 

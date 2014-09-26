@@ -141,6 +141,8 @@
 
 - (void) setAllTimeEntries:(BOOL)status;
 
+- (void) setButtonStates:(BOOL)state;
+
 // action selector methods
 - (IBAction) newTimeEntry:(id)sender;
 - (IBAction) clickedTimeEntryRemoveOutlet:(id)sender;

@@ -43,7 +43,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="958">
+                    <textField verticalHuggingPriority="750" id="958" customClass="TLTextField">
                         <rect key="frame" x="20" y="277" width="246" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="http://api.mydomain.com/v3" drawsBackground="YES" id="959">
@@ -52,7 +52,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="Pad-71-9Gp">
+                    <textField verticalHuggingPriority="750" id="Pad-71-9Gp" customClass="TLTextField">
                         <rect key="frame" x="20" y="222" width="246" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="DRI-ss-6KR">
@@ -83,7 +83,7 @@
                             <action selector="closePreferences:" target="-2" id="JpJ-fc-Qub"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="NoQ-s0-elp">
+                    <textField verticalHuggingPriority="750" id="NoQ-s0-elp" customClass="TLTextField">
                         <rect key="frame" x="20" y="119" width="246" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xQg-b2-2wT">
@@ -101,18 +101,6 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <secureTextField verticalHuggingPriority="750" id="Y7n-Ax-vUl">
-                        <rect key="frame" x="20" y="64" width="246" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="BmQ-7Y-za4">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            <allowedInputSourceLocales>
-                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
-                            </allowedInputSourceLocales>
-                        </secureTextFieldCell>
-                    </secureTextField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="HHP-Gg-WP6">
                         <rect key="frame" x="18" y="94" width="206" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -138,6 +126,18 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <secureTextField verticalHuggingPriority="750" id="Y7n-Ax-vUl">
+                        <rect key="frame" x="20" y="64" width="246" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="BmQ-7Y-za4">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                    </secureTextField>
                 </subviews>
             </view>
         </window>
